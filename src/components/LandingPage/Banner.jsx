@@ -6,7 +6,7 @@ import { IoMdArrowRoundUp } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div id="banner" className="h-[110vh] sm:h-screen banner relative">
+    <div id="banner" className="h-screen banner relative">
       <ReactPlayer url={vid} playing loop muted width="100%" height="100%" />
       <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
       <div className="w-full absolute left-0 top-0 h-full">
