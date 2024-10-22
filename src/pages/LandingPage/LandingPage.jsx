@@ -121,17 +121,17 @@ const LandingPage = () => {
                   className="h-[9rem] object-contain"
                 />
                 {process.id % 2 === 0 && (
-                  <p className="md:block hidden text-md font-light">
+                  <p className="md:block hidden text-lg font-light">
                     {process.description}
                   </p>
                 )}
-                <h6 className="font-semibold text-lg">{process.title}</h6>
+                <h6 className="font-semibold text-xl">{process.title}</h6>
                 {process.id % 2 !== 0 && (
-                  <p className="md:block hidden text-md font-light">
+                  <p className="md:block hidden text-lg font-light">
                     {process.description}
                   </p>
                 )}
-                <p className="md:hidden text-md font-light">
+                <p className="md:hidden text-lg font-light">
                   {process.description}
                 </p>
               </div>
