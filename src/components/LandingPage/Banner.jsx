@@ -12,7 +12,7 @@ const Banner = () => {
       <div className="w-full absolute left-0 top-0 h-full">
         <div className="wrapper pt-[9rem] md:pt-[15rem] grid md:grid-cols-[2fr_1fr] gap-10">
           <h1 className="heading text-white">
-            Welcome to Anytechwork: <br />
+            Welcome to ANYTECHWORK: <br />
             Crafting Websites That Speak Your Brand's Language
           </h1>
           <div className="h-[15rem] sm:h-[22rem] w-[15rem] sm:w-[22rem] flex items-center justify-center p-5 bg-gradient-to-b from-[#6D4C8A] to-transparent rounded-full">
