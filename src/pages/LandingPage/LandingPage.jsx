@@ -186,8 +186,8 @@ const LandingPage = () => {
                     <FaPhoneAlt className="text-white text-3xl" />
                   </div>
                   <div className="flex flex-col justify-center gap-2 h-full">
-                    <p className="font-medium text-md">Ronald Richards</p>
-                    <p className="text-sm text-gray-600">CEO</p>
+                    <p className="font-medium text-md">Call Us Now</p>
+                    <p className="text-sm text-gray-600">+910000000</p>
                   </div>
                 </Link>
               </div>
