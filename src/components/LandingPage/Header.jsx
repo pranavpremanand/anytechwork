@@ -57,6 +57,7 @@ const Header = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-90}
                 className="text-md cursor-pointer"
                 activeClass="active-link"
               >

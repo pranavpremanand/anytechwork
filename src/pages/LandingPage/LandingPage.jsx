@@ -18,7 +18,7 @@ const LandingPage = () => {
     <>
       <Header />
       <Banner />
-      <section className="relative py-[5rem]">
+      <section id='about-us' className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
           <h1 className="heading text-center mb-5 md:mb-10">About Us</h1>
