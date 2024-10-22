@@ -156,7 +156,7 @@ const LandingPage = () => {
                 alt="why choose us"
               />
             </div>
-            <p className="text-xl font-light leading-relaxed">
+            <p className="text-md md:text-xl font-light leading-relaxed">
               In today's fast-paced, tech-driven world, staying ahead of the
               curve is not just a competitive advantage—it's a necessity. We
               believe that embracing the right technologies can completely
