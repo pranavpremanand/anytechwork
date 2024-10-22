@@ -1,5 +1,5 @@
 import React from "react";
-import vid from "../../assets/vids/Banner.mp4";
+import vid from "../../assets/vids/banner.mp4";
 import ReactPlayer from "react-player";
 import img from "../../assets/landing-banner-img.png";
 import { IoMdArrowRoundUp } from "react-icons/io";
