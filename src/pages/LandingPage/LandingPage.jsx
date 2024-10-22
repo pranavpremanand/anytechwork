@@ -23,7 +23,7 @@ const LandingPage = () => {
         <div className="wrapper">
           <h1 className="heading text-center mb-5 md:mb-10">About Us</h1>
           <div className="grid md:grid-cols-2 gap-5 md:gap-10">
-            <p className="text-xl font-light leading-relaxed">
+            <p className="text-md md:text-xl font-light leading-relaxed">
               At Anytechwork, we believe that technology should be the driving
               force behind your business's growth and success. Headquartered in
               the tech capital of India, Bengaluru, we are a team of passionate
@@ -56,7 +56,7 @@ const LandingPage = () => {
             {pathname.includes("/app-development") &&
               "In the age of smartphones, a mobile app is the key to customer engagement."}
           </h1>
-          <p className="text-center max-w-6xl text-xl font-light">
+          <p className="text-center max-w-6xl text-md md:text-xl font-light">
             {pathname.includes("/web-development") &&
               "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results."}
             {pathname.includes("/app-development") &&
@@ -74,7 +74,7 @@ const LandingPage = () => {
                     />
                   </div>
                   <h6 className="font-medium text-2xl">{item.title}</h6>
-                  <p className="text-gray-700 text-xl font-light">
+                  <p className="text-gray-700 text-md md:text-xl font-light">
                     {item.description}
                   </p>
                 </div>
@@ -91,7 +91,7 @@ const LandingPage = () => {
                     />
                   </div>
                   <h6 className="font-medium text-2xl">{item.title}</h6>
-                  <p className="text-gray-700 text-xl font-light">
+                  <p className="text-gray-700 text-md md:text-xl font-light">
                     {item.description}
                   </p>
                 </div>
