@@ -24,9 +24,17 @@ const LandingPage = () => {
       <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
-          <h1 className="heading text-center mb-5 md:mb-10">About Us</h1>
+          <h1
+            data-aos="fade-down"
+            className="heading text-center mb-5 md:mb-10"
+          >
+            About Us
+          </h1>
           <div className="grid md:grid-cols-2 gap-5 md:gap-10">
-            <p className="text-md md:text-xl font-light leading-relaxed">
+            <p
+              data-aos="fade-right"
+              className="text-md md:text-xl font-light leading-relaxed"
+            >
               At Anytechwork, we believe that technology should be the driving
               force behind your business's growth and success. Headquartered in
               the tech capital of India, Bengaluru, we are a team of passionate
@@ -37,6 +45,7 @@ const LandingPage = () => {
               fast-evolving marketplace.
             </p>
             <img
+              data-aos="fade-left"
               src={aboutImg}
               alt="about"
               className="max-h-[25rem] w-full object-cover"
@@ -52,14 +61,20 @@ const LandingPage = () => {
         <div className="blue-bg-shape -z-10 left-[-5%] rotate-45 -translate-y-1/2"></div>
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-45 top-1/2 -translate-y-1/2"></div>
         <div className="wrapper flex flex-col items-center gap-5 z-10">
-          <h1 className="heading text-center max-w-6xl whitespace-pre-line capitalize">
+          <h1
+            data-aos="fade-up"
+            className="heading text-center max-w-6xl whitespace-pre-line capitalize"
+          >
             {/* We provide the Best IT solution services */}
             {pathname.includes("/web-development") &&
               "Your website is your digital storefront;\n Make sure it reflects your brand’s essence."}
             {pathname.includes("/app-development") &&
               "In the age of smartphones, a mobile app is the key to customer engagement."}
           </h1>
-          <p className="text-center max-w-6xl text-md md:text-xl font-light">
+          <p
+            data-aos="fade-up"
+            className="text-center max-w-6xl text-md md:text-xl font-light"
+          >
             {pathname.includes("/web-development") &&
               "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results."}
             {pathname.includes("/app-development") &&
@@ -68,7 +83,10 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 mx-auto max-w-7xl mt-4">
             {pathname.includes("/web-development") &&
               webDevelopmentServices.map((item) => (
-                <div className="flex flex-col gap-2 items-center shadow-xl transition-all duration-300 bg-gradient-to-tr from-white to-primary/20 rounded-lg p-5">
+                <div
+                  data-aos="fade-up"
+                  className="flex flex-col gap-2 items-center shadow-xl transition-all duration-300 bg-gradient-to-tr from-white to-primary/20 rounded-lg p-5"
+                >
                   <div className="mb-5 w-[12rem] h-[12rem] p-3 rounded-full bg-primary/20 flex items-center justify-center">
                     <img
                       src={item.icon}
@@ -85,7 +103,10 @@ const LandingPage = () => {
 
             {pathname.includes("/app-development") &&
               appDevelopmentServices.map((item) => (
-                <div className="flex flex-col gap-2 items-center shadow-xl transition-all duration-300 bg-gradient-to-tr from-white to-primary/20 rounded-lg p-5">
+                <div
+                  data-aos="fade-up"
+                  className="flex flex-col gap-2 items-center shadow-xl transition-all duration-300 bg-gradient-to-tr from-white to-primary/20 rounded-lg p-5"
+                >
                   <div className="mb-5 w-[12rem] h-[12rem] p-3 rounded-full bg-primary/20 flex items-center justify-center">
                     <img
                       src={item.icon}
@@ -106,12 +127,13 @@ const LandingPage = () => {
         <div className="blurred-purple-circle h-[15rem] w-[15rem] -z-10 left-[10%] top-1/2 -translate-y-1/2"></div>
         <div className="blurred-red-circle h-[20rem] w-[20rem] -z-10 right-[1rem] top-[-5rem]"></div>
         <div className="wrapper">
-          <h1 className="heading text-center mb-5 md:mb-10">
+          <h1 data-aos="fade-up" className="heading text-center mb-5 md:mb-10">
             Our Working Process
           </h1>
           <div className="grid md:grid-cols-4 gap-5 md:gap-2">
             {workingProcess.map((process) => (
               <div
+                data-aos="fade-up"
                 className={`flex items-center flex-col text-center gap-2 ${
                   process.id % 2 === 0 && "md:flex-col-reverse"
                 }`}
@@ -145,7 +167,7 @@ const LandingPage = () => {
       <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
         <div className="wrapper mx-auto grid lg:grid-cols-2 gap-5 md:gap-10">
-          <div className="flex flex-col gap-5">
+          <div data-aos='fade-right' className="flex flex-col gap-5">
             <h1 className="heading text-center lg:text-start">Why Choose Us</h1>
             <div className="lg:hidden h-full min-h-[25rem] relative">
               <img
@@ -196,7 +218,7 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div className="lg:block hidden h-full min-h-[25rem] relative">
+          <div data-aos='fade-left' className="lg:block hidden h-full min-h-[25rem] relative">
             <img
               src={whyChooseUsBg}
               className="h-full absolute left-1/2 -translate-x-1/2"

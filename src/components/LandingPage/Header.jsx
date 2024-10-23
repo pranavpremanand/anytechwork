@@ -45,10 +45,10 @@ const Header = () => {
           </div>
         </div>
         <div className="max-w-7xl md:mx-auto md:w-[95%] bg-[#EDF6FFC2] flex justify-between items-center gap-5 md:rounded-b-[2rem] py-3 px-5 sm:px-8">
-          <ScrollLink to="banner" spy={true} smooth={true} duration={500} className="cursor-pointer">
+          <ScrollLink data-aos='fade-down' to="banner" spy={true} smooth={true} duration={500} className="cursor-pointer">
             <img src={logo} alt="logo" className="h-[3rem] sm:h-[4rem]" />
           </ScrollLink>
-          <div className="hidden lg:flex items-center gap-5">
+          <div data-aos='fade-down' className="hidden lg:flex items-center gap-5">
             {landingPageHeaderLinks.map((link) => (
               <ScrollLink
                 key={link.id}

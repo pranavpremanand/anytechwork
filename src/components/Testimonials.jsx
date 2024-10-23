@@ -59,13 +59,13 @@ const Testimonials = () => {
         <div className="blue-bg-shape right-0 bottom-0 rotate-45"></div>
       <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-1/2 -z-10"></div>
       <div className="blurred-red-circle h-[25rem] w-[25rem] bottom-[-10rem] left-0 -z-10"></div>
-      <div className="wrapper mb-[3rem]">
+      <div data-aos='fade-up' className="wrapper mb-[3rem]">
         <p className="uppercase z-10 relative mb-2 gradient-text">
           testimonials
         </p>
         <h1 className="heading z-10 relative text-center capitalize">people say about us</h1>
       </div>
-      <div ref={sliderRef} className="keen-slider">
+      <div data-aos='fade-left' ref={sliderRef} className="keen-slider">
         {[0, 1, 2, 3, 4, 5].map((img, index) => (
           <div
             key={index}
