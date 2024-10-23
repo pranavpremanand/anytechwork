@@ -10,7 +10,12 @@ const Footer = () => {
     <div className="bg-[#17012C] py-[2rem] text-white">
       <div className="wrapper flex flex-col gap-3 sm:flex-row items-center justify-between">
         <div className="flex flex-col gap-3 items-start">
-          <img src={logo} alt="logo" className="h-[4rem] object-contain" />
+          <img
+            loading="lazy"
+            src={logo}
+            alt="logo"
+            className="h-[4rem] object-contain"
+          />
         </div>
         <div className="">
           <div className="flex mt-3 gap-5 justify-start">

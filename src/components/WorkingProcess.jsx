@@ -18,9 +18,9 @@ const WorkingProcess = () => {
               key={process.id}
             >
               <img
+                loading="lazy"
                 src={process.img}
                 alt={process.title}
-                loading="lazy"
                 className="h-[9rem] object-contain"
               />
               {process.id % 2 === 0 && (

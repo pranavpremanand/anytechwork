@@ -32,6 +32,7 @@ const Banner = () => {
             className="h-[15rem] sm:h-[22rem] w-[15rem] sm:w-[22rem] flex items-center justify-center p-5 bg-gradient-to-b from-[#6D4C8A] to-transparent rounded-full"
           >
             <img
+              loading="lazy"
               src={img}
               alt="banner-img"
               className="h-[13rem] object-contain sm:h-[20rem]"
@@ -42,16 +43,10 @@ const Banner = () => {
           data-aos="fade-right"
           className="wrapper pt-[1rem] sm:pt-[3rem] flex gap-5 items-center"
         >
-          <Link
-            to="/"
-            className="primary-btn flex items-center gap-1"
-          >
+          <Link to="/" className="primary-btn flex items-center gap-1">
             Get Started <IoMdArrowRoundUp className="-mt-1 text-xl rotate-45" />
           </Link>
-          <Link
-            to="/contact-us"
-            className="secondary-btn cursor-pointer"
-          >
+          <Link to="/contact-us" className="secondary-btn cursor-pointer">
             Contact Us
           </Link>
         </div>

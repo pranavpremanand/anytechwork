@@ -11,7 +11,12 @@ const Footer = () => {
     <div className="bg-[#17012C] py-[3rem] text-white">
       <div className="wrapper flex flex-col gap-3 sm:flex-row justify-between">
         <div className="flex flex-col gap-3 items-start">
-          <img src={logo} alt="logo" className="h-[4rem] object-contain" />
+          <img
+            loading="lazy"
+            src={logo}
+            alt="logo"
+            className="h-[4rem] object-contain"
+          />
           <p className="max-w-[25rem]">
             Follow us on our social media handles to keep up to date with our
             latest work and announcements.

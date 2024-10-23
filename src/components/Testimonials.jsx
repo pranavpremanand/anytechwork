@@ -74,7 +74,8 @@ const Testimonials = () => {
             className="keen-slider__slide flex flex-col items-center bg-white p-5 rounded-lg"
           >
             {/* <img
-                src={img}
+                loading='lazy'
+src={img}
                 alt="featured in"
                 className="h-[7rem] w-[12rem] object-contain"
               /> */}

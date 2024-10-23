@@ -51,7 +51,12 @@ const Header = () => {
         </div>
         <div className="max-w-7xl md:mx-auto md:w-[95%] bg-[#EDF6FFC2] flex justify-between items-center gap-5 md:rounded-b-[2rem] py-3 px-5 sm:px-8">
           <Link to="/">
-            <img src={logo} alt="logo" className="h-[3rem] sm:h-[4rem]" />
+            <img
+              loading="lazy"
+              src={logo}
+              alt="logo"
+              className="h-[3rem] sm:h-[4rem]"
+            />
           </Link>
           <div className="hidden lg:flex items-center gap-5">
             {websitePagesLinks.map((link) => (
@@ -90,7 +95,12 @@ const Header = () => {
         className="z-10 p-2"
       >
         <div className="mb-6 flex items-center justify-between pr-[.7rem] py-[.4rem]">
-          <img src={logo} alt="logo" className="h-[3rem] object-contain" />
+          <img
+            loading="lazy"
+            src={logo}
+            alt="logo"
+            className="h-[3rem] object-contain"
+          />
           <button
             onClick={() => setIsOpen(false)}
             className="text-black text-[2rem]"

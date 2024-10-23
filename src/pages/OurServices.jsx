@@ -17,9 +17,10 @@ const OurServices = () => {
         <div className="wrapper">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-6 md:gap-10">
             {allServices.map((item) => (
-              <div data-aos='fade-up' className="pb-[2rem] relative h-full">
+              <div data-aos="fade-up" className="pb-[2rem] relative h-full">
                 <div className="rounded-[3rem] h-full sm:rounded-[8rem] shadow-2xl bg-white flex flex-col gap-3 items-center text-center px-8 py-10 border-4 border-primary">
                   <img
+                    loading="lazy"
                     src={item.img}
                     alt={item.title}
                     className="object-contain w-[70%] max-w-[15rem]"

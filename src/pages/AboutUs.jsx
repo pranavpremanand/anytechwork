@@ -16,11 +16,11 @@ const AboutUs = () => {
       <PageBanner title={"About Us"} />
       <section className="py-[5rem] wrapper grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col">
-          <h1 className="heading">
+          <h1 data-aos="fade-right" className="heading">
             Your Trusted Partner in Digital Transformation and Next-Generation
             Technology Solutions
           </h1>
-          <p className="description mt-4">
+          <p data-aos="fade-right" className="description mt-4">
             At Anytechwork, we harness the power of technology to fuel your
             business growth. Based in the vibrant tech ecosystem of Bengaluru,
             we are at the forefront of delivering innovative, scalable, and
@@ -44,6 +44,8 @@ const AboutUs = () => {
           </p>
         </div>
         <img
+          data-aos="fade-left"
+          loading="lazy"
           src={img1}
           alt="about us"
           className="w-full rounded-lg h-[40vh] lg:h-full object-cover"
@@ -51,8 +53,10 @@ const AboutUs = () => {
       </section>
 
       <section className="wrapper">
-        <h1 className="heading">Who Are We?</h1>
-        <p className="description mt-4">
+        <h1 data-aos="fade-right" className="heading">
+          Who Are We?
+        </h1>
+        <p data-aos="fade-right" className="description mt-4">
           At Anytechwork, we believe technology transcends mere tools—it is the
           cornerstone of sustainable growth and long-lasting success. Nestled in
           Bengaluru, the tech capital of India, our team comprises passionate
@@ -63,6 +67,8 @@ const AboutUs = () => {
           advancement.
         </p>
         <img
+          data-aos="fade-right"
+          loading="lazy"
           src={img2}
           alt="about us"
           className="w-full rounded-lg h-[40vh] sm:h-[70vh] object-cover mt-7"
@@ -70,7 +76,10 @@ const AboutUs = () => {
       </section>
 
       <section className="my-[5rem]">
-        <div className="wrapper py-[5rem] rounded-md text-white bg-[#17012C8A] flex flex-col items-center gap-2 text-center">
+        <div
+          data-aos="fade-up"
+          className="wrapper py-[5rem] rounded-md text-white bg-[#17012C8A] flex flex-col items-center gap-2 text-center"
+        >
           <h1 className="heading">Be the First With Us</h1>
           <p className="description">
             There are many reasons to get down and start to get depressed about
@@ -86,9 +95,11 @@ const AboutUs = () => {
       </section>
 
       <section className="pb-[5rem] wrapper text-center">
-        <h1 className="heading">Innovative Alliances</h1>
+        <h1 data-aos="fade-up" className="heading">
+          Innovative Alliances
+        </h1>
         <div className="grid lg:grid-cols-2 gap-7 mt-7">
-          <div className="">
+          <div data-aos="fade-right" className="">
             <h2 className="text-2xl font-semibold">
               "Brands We Collaborate With"
             </h2>
@@ -120,6 +131,8 @@ const AboutUs = () => {
             </ul>
           </div>
           <img
+            data-aos="fade-left"
+            loading="lazy"
             src={img3}
             alt="about us"
             className="w-full rounded-lg h-[50vh] lg:h-full object-cover object-center mt-7"

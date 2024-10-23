@@ -100,35 +100,43 @@ const BestServicesSlider = () => {
             <FiArrowLeftCircle />
           </button>
           <div data-aos="fade-up" ref={sliderRef} className="keen-slider">
-            {cardItems.map(({ description, title,link, icon, id, img }, index) => (
-              <div key={id} className="relative pb-[2rem]">
-                <div
-                  className="keen-slider__slide flex flex-col items-center p-8 rounded-lg bg-[#eaf6fd]"
-                  style={{ backgroundImage: `url(${cardItemBg})` }}
-                >
-                  <div className="absolute flex justify-center items-center left-1/3 top-[1.3rem] rounded-full bg-white w-[3rem] h-[3rem]">
+            {cardItems.map(
+              ({ description, title, link, icon, id, img }, index) => (
+                <div key={id} className="relative pb-[2rem]">
+                  <div
+                    className="keen-slider__slide flex flex-col items-center p-8 rounded-lg bg-[#eaf6fd]"
+                    style={{ backgroundImage: `url(${cardItemBg})` }}
+                  >
+                    <div className="absolute flex justify-center items-center left-1/3 top-[1.3rem] rounded-full bg-white w-[3rem] h-[3rem]">
+                      <img
+                        loading="lazy"
+                        src={icon}
+                        className="w-[2rem] object-contain"
+                        alt=""
+                      />
+                    </div>
                     <img
-                      src={icon}
-                      className="w-[2rem] object-contain"
+                      loading="lazy"
+                      src={img}
+                      className="w-[90%] object-contain"
                       alt=""
                     />
+                    <h3 className="text-[1.5rem] font-semibold my-5 leading-tight">
+                      {title}
+                    </h3>
+                    <p className="text-sm font-light text-gray-500">
+                      {description}
+                    </p>
                   </div>
-                  <img src={img} className="w-[90%] object-contain" alt="" />
-                  <h3 className="text-[1.5rem] font-semibold my-5 leading-tight">
-                    {title}
-                  </h3>
-                  <p className="text-sm font-light text-gray-500">
-                    {description}
-                  </p>
+                  <Link
+                    to={link}
+                    className="absolute left-1/2 -translate-x-1/2 bottom-[0.5rem] z-20 text-[2rem] bg-white text-primary h-[3rem] w-[3rem] rounded-full border-2 border-primary flex items-center justify-center"
+                  >
+                    <FiArrowUpRight />
+                  </Link>
                 </div>
-                <Link
-                  to={link}
-                  className="absolute left-1/2 -translate-x-1/2 bottom-[0.5rem] z-20 text-[2rem] bg-white text-primary h-[3rem] w-[3rem] rounded-full border-2 border-primary flex items-center justify-center"
-                >
-                  <FiArrowUpRight />
-                </Link>
-              </div>
-            ))}
+              )
+            )}
           </div>
           <button
             onClick={() => instanceRef.current?.next()}

@@ -33,10 +33,7 @@ const LandingPage = () => {
             About Us
           </h1>
           <div className="grid md:grid-cols-2 gap-5 md:gap-10">
-            <p
-              data-aos="fade-right"
-              className="description"
-            >
+            <p data-aos="fade-right" className="description">
               At Anytechwork, we believe that technology should be the driving
               force behind your business's growth and success. Headquartered in
               the tech capital of India, Bengaluru, we are a team of passionate
@@ -48,6 +45,7 @@ const LandingPage = () => {
             </p>
             <img
               data-aos="fade-left"
+              loading="lazy"
               src={aboutImg}
               alt="about"
               className="max-h-[25rem] w-full object-cover"
@@ -91,6 +89,7 @@ const LandingPage = () => {
                 >
                   <div className="mb-5 w-[12rem] h-[12rem] p-3 rounded-full bg-primary/20 flex items-center justify-center">
                     <img
+                      loading="lazy"
                       src={item.icon}
                       alt="icon"
                       className="w-[7rem] grayscale object-contain"
@@ -111,6 +110,7 @@ const LandingPage = () => {
                 >
                   <div className="mb-5 w-[12rem] h-[12rem] p-3 rounded-full bg-primary/20 flex items-center justify-center">
                     <img
+                      loading="lazy"
                       src={item.icon}
                       alt="icon"
                       className="w-[7rem] grayscale object-contain"
@@ -125,19 +125,21 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <WorkingProcess/>
+      <WorkingProcess />
       <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
         <div className="wrapper mx-auto grid lg:grid-cols-2 gap-5 md:gap-10">
-          <div data-aos='fade-right' className="flex flex-col gap-5">
+          <div data-aos="fade-right" className="flex flex-col gap-5">
             <h1 className="heading text-center lg:text-start">Why Choose Us</h1>
             <div className="lg:hidden h-full min-h-[25rem] relative">
               <img
+                loading="lazy"
                 src={whyChooseUsBg}
                 className="h-full absolute left-1/2 -translate-x-1/2"
                 alt=""
               />
               <img
+                loading="lazy"
                 src={whyChooseUs}
                 className="h-full object-contain absolute left-1/2 -translate-x-1/2 bottom-0"
                 alt="why choose us"
@@ -158,6 +160,7 @@ const LandingPage = () => {
                 <div className="flex items-center gap-2">
                   <div className="bg-gray-400 w-[4.5rem] h-[4.5rem] rounded-full flex items-center justify-center">
                     <img
+                      loading="lazy"
                       src={whyChooseUs}
                       alt=""
                       className="object-cover w-[4rem] h-[4rem]"
@@ -168,25 +171,35 @@ const LandingPage = () => {
                     <p className="text-sm text-gray-600">CEO</p>
                   </div>
                 </div>
-                <Link to={`tel:${clientDetails.phone}`} className="flex items-center gap-2">
+                <Link
+                  to={`tel:${clientDetails.phone}`}
+                  className="flex items-center gap-2"
+                >
                   <div className="bg-primary w-[4.5rem] h-[4.5rem] rounded-full flex items-center justify-center">
                     <FaPhoneAlt className="text-white text-3xl" />
                   </div>
                   <div className="flex flex-col justify-center gap-2 h-full">
                     <p className="font-medium text-md">Call Us Now</p>
-                    <p className="text-sm text-gray-600">{clientDetails.phone}</p>
+                    <p className="text-sm text-gray-600">
+                      {clientDetails.phone}
+                    </p>
                   </div>
                 </Link>
               </div>
             </div>
           </div>
-          <div data-aos='fade-left' className="lg:block hidden h-full min-h-[25rem] relative">
+          <div
+            data-aos="fade-left"
+            className="lg:block hidden h-full min-h-[25rem] relative"
+          >
             <img
+              loading="lazy"
               src={whyChooseUsBg}
               className="h-full absolute left-1/2 -translate-x-1/2"
               alt=""
             />
             <img
+              loading="lazy"
               src={whyChooseUs}
               className="h-full object-contain absolute left-1/2 -translate-x-1/2 bottom-0"
               alt="why choose us"
