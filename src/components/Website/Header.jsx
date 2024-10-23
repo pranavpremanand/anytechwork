@@ -6,7 +6,11 @@ import { IoMailOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import { Link as ScrollLink } from "react-scroll";
-import { clientDetails, landingPageHeaderLinks, websitePagesLinks } from "../../constants";
+import {
+  clientDetails,
+  landingPageHeaderLinks,
+  websitePagesLinks,
+} from "../../constants";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
@@ -46,13 +50,10 @@ const Header = () => {
           </div>
         </div>
         <div className="max-w-7xl md:mx-auto md:w-[95%] bg-[#EDF6FFC2] flex justify-between items-center gap-5 md:rounded-b-[2rem] py-3 px-5 sm:px-8">
-          <Link data-aos="fade-down" to="/">
+          <Link to="/">
             <img src={logo} alt="logo" className="h-[3rem] sm:h-[4rem]" />
           </Link>
-          <div
-            data-aos="fade-down"
-            className="hidden lg:flex items-center gap-5"
-          >
+          <div className="hidden lg:flex items-center gap-5">
             {websitePagesLinks.map((link) => (
               <Link
                 key={link.id}
@@ -64,10 +65,7 @@ const Header = () => {
                 {link.title}
               </Link>
             ))}
-            <Link
-              to="/contact-us"
-              className="primary-btn"
-            >
+            <Link to="/contact-us" className="primary-btn">
               Work With Us
             </Link>
           </div>

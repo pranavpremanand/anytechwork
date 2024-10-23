@@ -2,6 +2,7 @@ import React from "react";
 import bgImg from "../assets/testimonial-bg.png";
 import { useKeenSlider } from "keen-slider/react";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import { testimonials } from "../constants";
 
 const animation = { duration: 25000, easing: (t) => t };
 
@@ -52,23 +53,24 @@ const Testimonials = () => {
   });
   return (
     <div
-      className="py-[5rem] relative bg-blue-50"
+      className="py-[5rem] relative bg-[#c4daf86f]"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
-        <div className="blue-bg-shape left-0 top-0 rotate-45"></div>
-        <div className="blue-bg-shape right-0 bottom-0 rotate-45"></div>
+      <div className="blue-bg-shape left-0 top-0 rotate-45"></div>
+      <div className="blue-bg-shape right-0 bottom-3 rotate-45"></div>
       <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-1/2 -z-10"></div>
-      <div className="blurred-red-circle h-[25rem] w-[25rem] bottom-[-10rem] left-0 -z-10"></div>
-      <div data-aos='fade-up' className="wrapper mb-[3rem]">
+      <div data-aos="fade-up" className="wrapper mb-[3rem]">
         <p className="uppercase z-10 relative mb-2 gradient-text">
           testimonials
         </p>
-        <h1 className="heading z-10 relative text-center capitalize">people say about us</h1>
+        <h1 className="heading z-10 relative text-center capitalize">
+          people say about us
+        </h1>
       </div>
-      <div data-aos='fade-left' ref={sliderRef} className="keen-slider">
-        {[0, 1, 2, 3, 4, 5].map((img, index) => (
+      <div data-aos="fade-left" ref={sliderRef} className="keen-slider">
+        {testimonials.map(({ id, img, title, name, description }, index) => (
           <div
-            key={index}
+            key={id}
             className="keen-slider__slide flex flex-col items-center bg-white p-5 rounded-lg"
           >
             {/* <img
@@ -76,22 +78,18 @@ const Testimonials = () => {
                 alt="featured in"
                 className="h-[7rem] w-[12rem] object-contain"
               /> */}
-            <div className="w-full flex items-center justify-between">
-              <span className="text-primary text-3xl">★★★★★</span>{" "}
+            <div className="w-full flex gap-4 items-center justify-between">
+              <span className="text-primary text-3xl">★★★★★</span>
               <RiDoubleQuotesR className="text-7xl text-primary/20" />
             </div>
-            <p className="text-lg font-light">
-              Exceptional service and stunning designs! The entire process was
-              smooth and collaborative. The team took the time to understand our
-              needs and provided insightful suggestions that truly enhanced our
-              project. The project was delivered on time, and the quality was
-              impeccable.
-            </p>
-            <div className="w-full flex gap-3 items-center mt-4">
-              <div className="w-[5rem] h-[5rem] rounded-full overflow-hidden bg-gray-300"></div>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-lg font-medium">John Doe</h3>
-                <p className="text-sm">CEO, ABC Company</p>
+            <div className="h-full flex flex-col justify-between">
+              <p className="text-lg font-light">{description}</p>
+              <div className="w-full flex gap-3 items-center mt-4">
+                <div className="min-w-[4.5rem] max-w-[4.5rem] min-h-[4.5rem] max-h-[4.5rem] rounded-full overflow-hidden bg-gray-300"></div>
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-lg font-medium">{name}</h3>
+                  <p className="text-sm text-wrap">{title}</p>
+                </div>
               </div>
             </div>
           </div>

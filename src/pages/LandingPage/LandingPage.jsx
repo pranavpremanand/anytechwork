@@ -4,6 +4,7 @@ import Banner from "../../components/Banner";
 import aboutImg from "../../assets/landing-about.png";
 import {
   appDevelopmentServices,
+  clientDetails,
   webDevelopmentServices,
   workingProcess,
 } from "../../constants";
@@ -14,6 +15,7 @@ import { Link, useLocation } from "react-router-dom";
 import Testimonials from "../../components/Testimonials";
 import GetInTouch from "../../components/GetInTouch";
 import Footer from "../../components/LandingPage/Footer";
+import WorkingProcess from "../../components/WorkingProcess";
 
 const LandingPage = () => {
   const { pathname } = useLocation();
@@ -33,7 +35,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-5 md:gap-10">
             <p
               data-aos="fade-right"
-              className="text-md md:text-xl font-light leading-relaxed"
+              className="description"
             >
               At Anytechwork, we believe that technology should be the driving
               force behind your business's growth and success. Headquartered in
@@ -73,7 +75,7 @@ const LandingPage = () => {
           </h1>
           <p
             data-aos="fade-up"
-            className="text-center max-w-6xl text-md md:text-xl font-light"
+            className="text-center max-w-6xl text-md md:text-base font-light"
           >
             {pathname.includes("/web-development") &&
               "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results."}
@@ -95,7 +97,7 @@ const LandingPage = () => {
                     />
                   </div>
                   <h6 className="font-medium text-2xl">{item.title}</h6>
-                  <p className="text-gray-700 text-md md:text-xl font-light">
+                  <p className="text-gray-700 text-md md:text-base font-light">
                     {item.description}
                   </p>
                 </div>
@@ -115,7 +117,7 @@ const LandingPage = () => {
                     />
                   </div>
                   <h6 className="font-medium text-2xl">{item.title}</h6>
-                  <p className="text-gray-700 text-md md:text-xl font-light">
+                  <p className="text-gray-700 text-md md:text-base font-light">
                     {item.description}
                   </p>
                 </div>
@@ -123,47 +125,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#5B3E9A69] py-[5rem] relative">
-        <div className="blurred-purple-circle h-[15rem] w-[15rem] -z-10 left-[10%] top-1/2 -translate-y-1/2"></div>
-        <div className="blurred-red-circle h-[20rem] w-[20rem] -z-10 right-[1rem] top-[-5rem]"></div>
-        <div className="wrapper">
-          <h1 data-aos="fade-up" className="heading text-center mb-5 md:mb-10">
-            Our Working Process
-          </h1>
-          <div className="grid md:grid-cols-4 gap-5 md:gap-2">
-            {workingProcess.map((process) => (
-              <div
-                data-aos="fade-up"
-                className={`flex items-center flex-col text-center gap-2 ${
-                  process.id % 2 === 0 && "md:flex-col-reverse"
-                }`}
-                key={process.id}
-              >
-                <img
-                  src={process.img}
-                  alt={process.title}
-                  loading="lazy"
-                  className="h-[9rem] object-contain"
-                />
-                {process.id % 2 === 0 && (
-                  <p className="md:block hidden text-lg font-light">
-                    {process.description}
-                  </p>
-                )}
-                <h6 className="font-semibold text-xl">{process.title}</h6>
-                {process.id % 2 !== 0 && (
-                  <p className="md:block hidden text-lg font-light">
-                    {process.description}
-                  </p>
-                )}
-                <p className="md:hidden text-lg font-light">
-                  {process.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WorkingProcess/>
       <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
         <div className="wrapper mx-auto grid lg:grid-cols-2 gap-5 md:gap-10">
@@ -181,7 +143,7 @@ const LandingPage = () => {
                 alt="why choose us"
               />
             </div>
-            <p className="text-md md:text-xl font-light leading-relaxed">
+            <p className="description">
               In today's fast-paced, tech-driven world, staying ahead of the
               curve is not just a competitive advantage—it's a necessity. We
               believe that embracing the right technologies can completely
@@ -206,13 +168,13 @@ const LandingPage = () => {
                     <p className="text-sm text-gray-600">CEO</p>
                   </div>
                 </div>
-                <Link className="flex items-center gap-2">
+                <Link to={`tel:${clientDetails.phone}`} className="flex items-center gap-2">
                   <div className="bg-primary w-[4.5rem] h-[4.5rem] rounded-full flex items-center justify-center">
                     <FaPhoneAlt className="text-white text-3xl" />
                   </div>
                   <div className="flex flex-col justify-center gap-2 h-full">
                     <p className="font-medium text-md">Call Us Now</p>
-                    <p className="text-sm text-gray-600">+910000000</p>
+                    <p className="text-sm text-gray-600">{clientDetails.phone}</p>
                   </div>
                 </Link>
               </div>

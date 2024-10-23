@@ -48,16 +48,12 @@ const Banner = () => {
           >
             Get Started <IoMdArrowRoundUp className="-mt-1 text-xl rotate-45" />
           </Link>
-          <ScrollLink
-            spy
-            smooth
-            duration={500}
-            offset={-90}
-            to="contact"
+          <Link
+            to="/contact-us"
             className="secondary-btn cursor-pointer"
           >
             Contact Us
-          </ScrollLink>
+          </Link>
         </div>
       </div>
     </div>

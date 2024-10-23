@@ -99,8 +99,8 @@ const BestServicesSlider = () => {
           >
             <FiArrowLeftCircle />
           </button>
-          <div data-aos="fade-left" ref={sliderRef} className="keen-slider">
-            {cardItems.map(({ description, title, icon, id, img }, index) => (
+          <div data-aos="fade-up" ref={sliderRef} className="keen-slider">
+            {cardItems.map(({ description, title,link, icon, id, img }, index) => (
               <div key={id} className="relative pb-[2rem]">
                 <div
                   className="keen-slider__slide flex flex-col items-center p-8 rounded-lg bg-[#eaf6fd]"
@@ -122,7 +122,7 @@ const BestServicesSlider = () => {
                   </p>
                 </div>
                 <Link
-                  to={cardItems[index].link}
+                  to={link}
                   className="absolute left-1/2 -translate-x-1/2 bottom-[0.5rem] z-20 text-[2rem] bg-white text-primary h-[3rem] w-[3rem] rounded-full border-2 border-primary flex items-center justify-center"
                 >
                   <FiArrowUpRight />
