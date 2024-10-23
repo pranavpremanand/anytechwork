@@ -47,6 +47,30 @@ export const landingPageHeaderLinks = [
   },
 ];
 
+// website pages
+export const websitePagesLinks = [
+  {
+    id: 1,
+    title: "Home",
+    link: "/",
+  },
+  {
+    id: 2,
+    title: "About Us",
+    link: "/about-us",
+  },
+  {
+    id: 3,
+    title: "Our Services",
+    link: "/services",
+  },
+  {
+    id: 4,
+    title: "Contact Us",
+    link: "/contact",
+  },
+];
+
 // working process
 export const workingProcess = [
   {
