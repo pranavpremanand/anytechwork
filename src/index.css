@@ -33,7 +33,7 @@
     @apply bg-gradient-to-r text-transparent from-primary to-[#2563eb] bg-clip-text text-center font-medium
   }
   .description{
-    @apply text-[.9rem] md:text-base font-light leading-relaxed;
+    @apply text-base md:text-lg font-light leading-relaxed;
   }
 }
 

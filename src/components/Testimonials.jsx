@@ -71,11 +71,11 @@ const Testimonials = () => {
         {testimonials.map(({ id, img, title, name, description }, index) => (
           <div
             key={id}
-            className="keen-slider__slide flex flex-col items-center bg-white p-5 rounded-lg"
+            className="keen-slider__slide flex flex-col items-center bg-white p-5 mx-3 rounded-lg"
           >
             {/* <img
                 loading='lazy'
-src={img}
+                src={img}
                 alt="featured in"
                 className="h-[7rem] w-[12rem] object-contain"
               /> */}
@@ -84,7 +84,7 @@ src={img}
               <RiDoubleQuotesR className="text-7xl text-primary/20" />
             </div>
             <div className="h-full flex flex-col justify-between">
-              <p className="text-lg font-light">{description}</p>
+              <p className="description">{description}</p>
               <div className="w-full flex gap-3 items-center mt-4">
                 <div className="min-w-[4.5rem] max-w-[4.5rem] min-h-[4.5rem] max-h-[4.5rem] rounded-full overflow-hidden bg-gray-300"></div>
                 <div className="flex flex-col gap-1">
