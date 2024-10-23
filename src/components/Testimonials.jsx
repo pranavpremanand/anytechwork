@@ -69,27 +69,26 @@ const Testimonials = () => {
       </div>
       <div data-aos="fade-left" ref={sliderRef} className="keen-slider">
         {testimonials.map(({ id, img, title, name, description }, index) => (
-          <div
-            key={id}
-            className="keen-slider__slide flex flex-col items-center bg-white p-5 mx-3 rounded-lg"
-          >
-            {/* <img
+          <div key={id} className="keen-slider__slide">
+            <div className="flex flex-col items-center bg-white p-5 mx-2 rounded-xl h-full">
+              {/* <img
                 loading='lazy'
                 src={img}
                 alt="featured in"
                 className="h-[7rem] w-[12rem] object-contain"
               /> */}
-            <div className="w-full flex gap-4 items-center justify-between">
-              <span className="text-primary text-3xl">★★★★★</span>
-              <RiDoubleQuotesR className="text-7xl text-primary/20" />
-            </div>
-            <div className="h-full flex flex-col justify-between">
-              <p className="description">{description}</p>
-              <div className="w-full flex gap-3 items-center mt-4">
-                <div className="min-w-[4.5rem] max-w-[4.5rem] min-h-[4.5rem] max-h-[4.5rem] rounded-full overflow-hidden bg-gray-300"></div>
-                <div className="flex flex-col gap-1">
-                  <h3 className="text-lg font-medium">{name}</h3>
-                  <p className="text-sm text-wrap">{title}</p>
+              <div className="w-full flex gap-4 items-center justify-between">
+                <span className="text-primary text-3xl">★★★★★</span>
+                <RiDoubleQuotesR className="text-7xl text-primary/20" />
+              </div>
+              <div className="h-full flex flex-col justify-between">
+                <p className="description">" {description} "</p>
+                <div className="w-full flex gap-3 items-center mt-4">
+                  <div className="min-w-[4.5rem] max-w-[4.5rem] min-h-[4.5rem] max-h-[4.5rem] rounded-full overflow-hidden bg-gray-300"></div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="text-lg font-medium">{name}</h3>
+                    <p className="text-sm text-wrap">{title}</p>
+                  </div>
                 </div>
               </div>
             </div>
