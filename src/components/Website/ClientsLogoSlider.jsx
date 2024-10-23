@@ -10,10 +10,22 @@ const ClientsLogoSlider = () => {
     renderMode: "performance",
     drag: true,
     slides: {
-      perView: 3,
+      perView: 2,
       spacing: 30,
     },
     breakpoints: {
+      "(min-width: 450px)": {
+        slides: {
+          perView: 3,
+          spacing: 30,
+        },
+      },
+      "(min-width: 768px)": {
+        slides: {
+          perView: 4,
+          spacing: 30,
+        },
+      },
       "(min-width: 1024px)": {
         slides: {
           perView: 5,
