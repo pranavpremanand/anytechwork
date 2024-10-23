@@ -12,7 +12,7 @@ const Testimonials = () => {
     renderMode: "performance",
     drag: true,
     slides: {
-      perView: 4,
+      perView: 3,
       spacing: 30,
     },
     breakpoints: {
@@ -34,7 +34,7 @@ const Testimonials = () => {
           spacing: 30,
         },
       },
-      "(min-width: 1200px)": {
+      "(min-width: 1550px)": {
         slides: {
           perView: 4,
           spacing: 30,
