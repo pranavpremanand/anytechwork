@@ -55,7 +55,7 @@ const ClientsLogoSlider = () => {
               loading="lazy"
               src={img}
               alt="featured in"
-              className="h-[7rem] w-[15rem] object-contain"
+              className="h-auto w-full object-contain"
             />
           </div>
         ))}
