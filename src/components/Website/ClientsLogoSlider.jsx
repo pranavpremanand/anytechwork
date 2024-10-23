@@ -48,7 +48,7 @@ const ClientsLogoSlider = () => {
       <h1 data-aos="fade-up" className="heading text-center">
         Join Our <span className="text-blue-300">40+</span> Happy Customers
       </h1>
-      <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-4">
+      <div data-aos="fade-left" ref={sliderRef} className="keen-slider mt-4">
         {clients.concat(clients).map(({ img }, index) => (
           <div key={index} className="keen-slider__slide flex justify-center">
             <img
