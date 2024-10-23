@@ -75,10 +75,10 @@ const AboutUs = () => {
         />
       </section>
 
-      <section className="my-[5rem]">
+      <section className="wrapper my-[5rem]">
         <div
           data-aos="fade-up"
-          className="wrapper py-[5rem] rounded-md text-white bg-[#17012C8A] flex flex-col items-center gap-2 text-center"
+          className="py-[5rem] rounded-md text-white bg-[#17012C8A] flex flex-col items-center gap-2 text-center"
         >
           <h1 className="heading">Be the First With Us</h1>
           <p className="description">
