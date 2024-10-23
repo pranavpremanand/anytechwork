@@ -16,6 +16,13 @@ import androidAppIcon from "./assets/icons/android-development.png";
 import flutterAppIcon from "./assets/icons/flutter-development.png";
 import hybridAppIcon from "./assets/icons/hybrid-app-development.png";
 
+// client details
+export const clientDetails = {
+  phone: "+91-9014944329",
+  address:
+    "Flat-355, 2nd Floor, Block-A, Mahaveer Orchids, Choodasandra, Bengaluru, Karnataka 560099, India",
+};
+
 // landing page header links
 export const landingPageHeaderLinks = [
   {
@@ -67,8 +74,6 @@ export const workingProcess = [
     img: process4,
   },
 ];
-
-
 
 // web development services
 export const webDevelopmentServices = [

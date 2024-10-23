@@ -12,13 +12,13 @@
     @apply text-[2rem] md:text-5xl leading-tight font-semibold;
   }
   .active-link {
-    @apply text-[#564fbe];
+    @apply text-[#564fbe] font-semibold;
   }
   .primary-btn {
-    @apply bg-gradient-to-r text-[.9rem] font-medium from-[#B17CEE] to-[#6D4C8A] px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
+    @apply bg-gradient-to-r text-[.9rem] cursor-pointer font-medium from-[#B17CEE] to-[#6D4C8A] px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
   }
   .secondary-btn {
-    @apply bg-[#5C5E60] text-[.9rem] font-medium px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
+    @apply bg-[#5C5E60] text-[.9rem] cursor-pointer font-medium px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
   }
   .blurred-red-circle {
     @apply bg-[#ee7cc245] rounded-full blur-3xl absolute;
@@ -28,6 +28,9 @@
   }
   .blue-bg-shape{
     @apply absolute h-[20rem] w-[10rem] rounded-full bg-[#bfdbfe];
+  }
+  .gradient-text{
+    @apply bg-gradient-to-r text-transparent from-primary to-[#2563eb] bg-clip-text text-center font-medium
   }
 }
 

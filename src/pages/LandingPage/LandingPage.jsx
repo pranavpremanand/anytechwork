@@ -11,6 +11,9 @@ import whyChooseUs from "../../assets/landing-whychooseus.png";
 import whyChooseUsBg from "../../assets/landing-whychooseus-bg.png";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import Testimonials from "../../components/Testimonials";
+import GetInTouch from "../../components/GetInTouch";
+import Footer from "../../components/LandingPage/Footer";
 
 const LandingPage = () => {
   const { pathname } = useLocation();
@@ -18,7 +21,7 @@ const LandingPage = () => {
     <>
       <Header />
       <Banner />
-      <section id='about-us' className="relative py-[5rem]">
+      <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
           <h1 className="heading text-center mb-5 md:mb-10">About Us</h1>
@@ -140,7 +143,7 @@ const LandingPage = () => {
         </div>
       </section>
       <section className="py-[5rem] relative">
-        <div className="blue-bg-shape -z-10 left-[-5%] rotate-45 top-1/2 -translate-y-1/2"></div>
+        <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
         <div className="wrapper mx-auto grid lg:grid-cols-2 gap-5 md:gap-10">
           <div className="flex flex-col gap-5">
             <h1 className="heading text-center lg:text-start">Why Choose Us</h1>
@@ -207,6 +210,9 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+      <Testimonials />
+      <GetInTouch />
+      <Footer />
     </>
   );
 };

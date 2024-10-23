@@ -6,7 +6,7 @@ import { IoMailOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import { Link as ScrollLink } from "react-scroll";
-import { landingPageHeaderLinks } from "../../constants";
+import { clientDetails, landingPageHeaderLinks } from "../../constants";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
@@ -19,17 +19,16 @@ const Header = () => {
         <div className="wrapper w-[95%] hidden md:flex bg-[#17012C] py-3 px-8 rounded-b-[2rem]">
           <div className="flex w-full justify-between gap-5 items-center">
             <div className="flex items-center gap-5">
-              <Link to="tel:+919014944329" className="flex items-center gap-1">
+              <Link
+                to={`tel:${clientDetails.phone}`}
+                className="flex items-center gap-1"
+              >
                 <FaPhoneAlt className="text-primary text-lg" />
-                <p className="text-white text-sm">
-                  +91-90149 44329
-                </p>
+                <p className="text-white text-sm">{clientDetails.phone}</p>
               </Link>
               <Link className="flex items-center gap-1">
                 <IoMailOutline className="text-primary text-2xl" />
-                <p className="text-white text-sm">
-                  info@gmail.com
-                </p>
+                <p className="text-white text-sm">info@gmail.com</p>
               </Link>
             </div>
             <div className="flex gap-5 items-center">
@@ -46,7 +45,7 @@ const Header = () => {
           </div>
         </div>
         <div className="max-w-7xl md:mx-auto md:w-[95%] bg-[#EDF6FFC2] flex justify-between items-center gap-5 md:rounded-b-[2rem] py-3 px-5 sm:px-8">
-          <ScrollLink>
+          <ScrollLink to="banner" spy={true} smooth={true} duration={500} className="cursor-pointer">
             <img src={logo} alt="logo" className="h-[3rem] sm:h-[4rem]" />
           </ScrollLink>
           <div className="hidden lg:flex items-center gap-5">
@@ -64,15 +63,16 @@ const Header = () => {
                 {link.title}
               </ScrollLink>
             ))}
-            <Link
+            <ScrollLink
               to="contact"
               spy={true}
               smooth={true}
               duration={500}
+              offset={-90}
               className="primary-btn"
             >
               Work With Us
-            </Link>
+            </ScrollLink>
           </div>
           <div
             className="block lg:hidden justify-self-end"
