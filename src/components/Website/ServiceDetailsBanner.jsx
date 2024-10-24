@@ -14,7 +14,7 @@ const ServiceDetailsBanner = () => {
         </h1>
         <div
           data-aos="fade-up"
-          className="mt-5 text-base sm:text-xl font-medium px-3 py-2 w-fit rounded-full border-2 border-primary flex justify-center text-white items-center gap-1 sm:gap-2"
+          className="mt-5 text-base sm:text-xl font-medium px-3 py-2 w-fit rounded-full border-2 border-primary flex flex-wrap justify-center text-white items-center gap-1 sm:gap-2"
         >
           <Link to="/">
             Home
