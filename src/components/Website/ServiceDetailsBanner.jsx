@@ -7,7 +7,7 @@ const ServiceDetailsBanner = () => {
     const {pathname} = useLocation();
     const title = allServices.find((item) => item.link === pathname)?.title;
   return (
-    <div className="h-[40vh] md:h-[70vh] w-full page-banner relative bg-[#17012C]">
+    <div className="min-h-[40vh] md:min-h-[70vh] py-3 w-full page-banner relative bg-[#17012C]">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-full flex flex-col items-center">
         <h1 data-aos="fade-up" className="heading text-white text-center">
           {title}
