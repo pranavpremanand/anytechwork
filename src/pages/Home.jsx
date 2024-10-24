@@ -118,7 +118,7 @@ const Home = () => {
               tangible results.
             </p>
             <div className="flex flex-col-reverse sm:flex-col gap-10 mt-6">
-              <button className="primary-btn w-fit">To Know More</button>
+              <Link to="/about-us" className="primary-btn w-fit">To Know More</Link>
               <div className="flex sm:flex-row flex-col sm:items-center gap-5 sm:gap-10">
                 <div className="flex items-center gap-2">
                   <div className="bg-gray-400 w-[4.5rem] h-[4.5rem] rounded-full flex items-center justify-center">

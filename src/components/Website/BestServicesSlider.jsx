@@ -102,7 +102,7 @@ const BestServicesSlider = () => {
           <div data-aos="fade-up" ref={sliderRef} className="keen-slider">
             {cardItems.map(
               ({ description, title, link, icon, id, img }, index) => (
-                <div key={id} className="relative pb-[2rem]">
+                <Link to={link} key={id} className="relative pb-[2rem]">
                   <div
                     className="keen-slider__slide flex flex-col items-center p-8 rounded-lg bg-[#eaf6fd]"
                     style={{ backgroundImage: `url(${cardItemBg})` }}
@@ -134,7 +134,7 @@ const BestServicesSlider = () => {
                   >
                     <FiArrowUpRight />
                   </Link>
-                </div>
+                </Link>
               )
             )}
           </div>
