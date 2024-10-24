@@ -181,19 +181,19 @@ export const appDevelopmentServices = [
 export const allServices = [
   {
     id: 1,
+    img: service2,
+    title: "Web Development",
+    description:
+    "In order to scale new customer acquisition and retention commerce brands, we work across",
+    link: "/services/web-development",
+  },
+  {
+    id: 2,
     img: service1,
     title: "App Development",
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
-  },
-  {
-    id: 2,
-    img: service2,
-    title: "Web Development",
-    description:
-      "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+    link: "/services/app-development",
   },
   {
     id: 3,
@@ -201,7 +201,7 @@ export const allServices = [
     title: "Artificial Intelligence",
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+    link: "/services/artificial-intelligence",
   },
   {
     id: 4,
@@ -209,7 +209,7 @@ export const allServices = [
     title: "Blockchain",
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+    link: "/services/blockchain",
   },
   {
     id: 5,
@@ -217,7 +217,7 @@ export const allServices = [
     title: "Robotic Process Automation (RPA)",
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+    link: "/services/rpa",
   },
   {
     id: 6,
@@ -225,7 +225,7 @@ export const allServices = [
     title: "AR & VR",
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+    link: "/services/ar-vr",
   },
 ];
 

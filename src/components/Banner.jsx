@@ -3,10 +3,9 @@ import vid from "../assets/vids/banner.mp4";
 import ReactPlayer from "react-player";
 import img from "../assets/landing-banner-img.png";
 import { IoMdArrowRoundUp } from "react-icons/io";
-import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
 
-const Banner = () => {
+const Banner = ({ page }) => {
   const { pathname } = useLocation();
   return (
     <div id="banner" className="h-screen banner relative">
@@ -22,9 +21,9 @@ const Banner = () => {
           ) : (
             <h1 data-aos="fade-right" className="heading text-white">
               Welcome to ANYTECHWORK: <br />
-              Crafting {pathname.includes("/web-development") && "Websites"}
-              {pathname.includes("/app-development") && "Mobile Apps"} That
-              Speak Your Brand's Language
+              Crafting {page === "web-development" && "Websites"}
+              {page === "app-development" && "Mobile Apps"} That Speak Your
+              Brand's Language
             </h1>
           )}
           <div

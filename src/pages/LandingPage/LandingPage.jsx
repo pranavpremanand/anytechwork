@@ -6,23 +6,21 @@ import {
   appDevelopmentServices,
   clientDetails,
   webDevelopmentServices,
-  workingProcess,
 } from "../../constants";
 import whyChooseUs from "../../assets/landing-whychooseus.png";
 import whyChooseUsBg from "../../assets/landing-whychooseus-bg.png";
 import { FaPhoneAlt } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Testimonials from "../../components/Testimonials";
 import GetInTouch from "../../components/GetInTouch";
 import Footer from "../../components/LandingPage/Footer";
 import WorkingProcess from "../../components/WorkingProcess";
 
-const LandingPage = () => {
-  const { pathname } = useLocation();
+const LandingPage = ({ page }) => {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner page={page}/>
       <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
@@ -66,22 +64,22 @@ const LandingPage = () => {
             className="heading text-center max-w-6xl whitespace-pre-line capitalize"
           >
             {/* We provide the Best IT solution services */}
-            {pathname.includes("/web-development") &&
+            {page === "web-development" &&
               "Your website is your digital storefront;\n Make sure it reflects your brand’s essence."}
-            {pathname.includes("/app-development") &&
+            {page === "app-development" &&
               "In the age of smartphones, a mobile app is the key to customer engagement."}
           </h1>
           <p
             data-aos="fade-up"
             className="text-center max-w-6xl text-md md:text-base font-light"
           >
-            {pathname.includes("/web-development") &&
+            {page === "web-development" &&
               "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results."}
-            {pathname.includes("/app-development") &&
+            {page === "app-development" &&
               "Each app we develop is a powerful tool designed to improve productivity, fostering greater engagement and empowering your company to thrive in an increasingly mobile-focused landscape."}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 mx-auto max-w-7xl mt-4">
-            {pathname.includes("/web-development") &&
+            {page === "web-development" &&
               webDevelopmentServices.map((item) => (
                 <div
                   data-aos="fade-up"
@@ -102,7 +100,7 @@ const LandingPage = () => {
                 </div>
               ))}
 
-            {pathname.includes("/app-development") &&
+            {page === "app-development" &&
               appDevelopmentServices.map((item) => (
                 <div
                   data-aos="fade-up"

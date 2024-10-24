@@ -8,7 +8,7 @@
   .wrapper {
     @apply max-w-7xl mx-auto px-4;
   }
-  .heading{
+  .heading {
     @apply text-[2rem] md:text-5xl leading-tight font-semibold;
   }
   .active-link {
@@ -20,20 +20,23 @@
   .secondary-btn {
     @apply bg-[#5C5E60] text-[.9rem] cursor-pointer font-medium px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
   }
+  .purple-btn {
+    @apply bg-primary hover:bg-primary/70 text-[.9rem] cursor-pointer font-medium px-5 py-3 text-white transition-all duration-300 hover:-translate-y-1;
+  }
   .blurred-red-circle {
     @apply bg-[#ee7cc245] rounded-full blur-3xl absolute;
   }
   .blurred-purple-circle {
     @apply bg-[#b17cee67] rounded-full blur-3xl absolute;
   }
-  .blue-bg-shape{
+  .blue-bg-shape {
     @apply absolute h-[20rem] w-[10rem] rounded-full bg-[#bfdbfe];
   }
-  .gradient-text{
-    @apply bg-gradient-to-r text-transparent from-primary to-[#2563eb] bg-clip-text text-center font-medium
+  .gradient-text {
+    @apply bg-gradient-to-r text-transparent from-primary to-[#2563eb] bg-clip-text text-center font-medium;
   }
-  .description{
-    @apply text-base md:text-lg font-light leading-relaxed;
+  .description {
+    @apply text-base font-light leading-relaxed;
   }
 }
 
@@ -52,7 +55,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background: #ffffff;
-  color: #000000;
+  color: #17012c;
   font-size: 90%;
 }
 
@@ -69,12 +72,12 @@ html {
 }
 
 /* header mobile menu offcanvas */
-.EZDrawer .EZDrawer__container{
+.EZDrawer .EZDrawer__container {
   background: #b7aebf !important;
   width: 80vw !important;
 }
 
 /* line height for heading */
-.heading{
+.heading {
   line-height: 1.2;
 }

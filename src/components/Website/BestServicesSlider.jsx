@@ -21,8 +21,8 @@ const cardItems = [
     icon: appDevIcon,
     img: appDevCardImg,
     description:
-      "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+      "Each app we develop is a powerful tool designed to improve productivity, fostering greater engagement and empowering your company to thrive in an increasingly mobile-focused landscape.",
+    link: "/services/app-development",
   },
   {
     id: 2,
@@ -30,8 +30,8 @@ const cardItems = [
     icon: webDevIcon,
     img: webDevCardImg,
     description:
-      "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+      "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results.",
+    link: "/services/web-development",
   },
   {
     id: 3,
@@ -39,8 +39,8 @@ const cardItems = [
     icon: aiIcon,
     img: aiCardImg,
     description:
-      "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+      "Let AI elevate your business, streamline operations, and open doors to new possibilities.",
+    link: "/services/artificial-intelligence",
   },
   {
     id: 4,
@@ -48,8 +48,8 @@ const cardItems = [
     icon: appDevIcon,
     img: appDevCardImg,
     description:
-      "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+      "Each app we develop is a powerful tool designed to improve productivity, fostering greater engagement and empowering your company to thrive in an increasingly mobile-focused landscape.",
+    link: "/services/app-development",
   },
   {
     id: 5,
@@ -57,8 +57,8 @@ const cardItems = [
     icon: webDevIcon,
     img: webDevCardImg,
     description:
-      "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+      "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results.",
+    link: "/services/web-development",
   },
   {
     id: 6,
@@ -66,8 +66,8 @@ const cardItems = [
     icon: aiIcon,
     img: aiCardImg,
     description:
-      "In order to scale new customer acquisition and retention commerce brands, we work across",
-    link: "/",
+      "Let AI elevate your business, streamline operations, and open doors to new possibilities.",
+    link: "/services/artificial-intelligence",
   },
 ];
 

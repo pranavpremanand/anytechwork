@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
-import { clientDetails } from "../../constants";
+import { allServices, clientDetails } from "../../constants";
 
 const Footer = () => {
   return (
@@ -37,24 +37,11 @@ const Footer = () => {
         <div className="flex flex-col mt-6 sm:mt-0 sm:flex-row gap-7 md:gap-14">
           <div className="flex flex-col gap-3">
             <p className="text-lg font-semibold">Our Services</p>
-            <Link to="/" className="cursor-pointer">
-              Web Development
-            </Link>
-            <Link to="/services" className="cursor-pointer">
-              App Development
-            </Link>
-            <Link to="/" className="cursor-pointer">
-              Artificial Intelligence
-            </Link>
-            <Link to="/" className="cursor-pointer">
-              Blockchain
-            </Link>
-            <Link to="/" className="cursor-pointer">
-              Robotic Process Automation (RPA)
-            </Link>
-            <Link to="/" className="cursor-pointer">
-              AR & VR
-            </Link>
+            {allServices.map((item) => (
+              <Link key={item.id} to={item.link} className="cursor-pointer">
+                {item.title}
+              </Link>
+            ))}
           </div>
           <div className="flex flex-col gap-3">
             <p className="text-lg font-semibold">Quick Links</p>
