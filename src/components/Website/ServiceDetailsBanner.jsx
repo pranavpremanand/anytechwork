@@ -21,7 +21,7 @@ const ServiceDetailsBanner = () => {
           </Link>
           <IoIosArrowForward />
           <Link to="/services">
-            Our Services
+            Services
           </Link>
           <IoIosArrowForward />
           <p>{title}</p>
