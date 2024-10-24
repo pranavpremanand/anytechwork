@@ -69,6 +69,7 @@ html {
 /* page banner video */
 .page-banner video {
   object-fit: cover;
+  position: absolute;
 }
 
 /* header mobile menu offcanvas */
