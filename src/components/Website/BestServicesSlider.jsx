@@ -90,7 +90,7 @@ const BestServicesSlider = () => {
     <section className="py-[5rem] relative">
       <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
       <div className="wrapper text-center">
-        <p className="gradient-text uppercase mb-3">our best services</p>
+        <p className="gradient-text uppercase mb-3">our top services</p>
         <h1 className="heading capitalize mb-8">we provide best service</h1>
         <div className="flex items-center gap-3 md:gap-10">
           <button
