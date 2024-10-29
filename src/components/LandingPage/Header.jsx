@@ -152,7 +152,7 @@ const Header = () => {
             <ScrollLink
               onClick={() => setIsOpen(false)}
               key={id}
-              className="text-2xl font-mediumduration-300 link"
+              className="text-2xl font-medium duration-300 link"
               to={link}
               spy={true}
               smooth={true}
@@ -169,12 +169,11 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-20}
-              className="text-md cursor-pointer"
-              activeClass="active-link"
+              className="text-2xl font-medium link"
             >
               Home
             </ScrollLink>
-            <Link to="/about-us" className="text-md cursor-pointer">
+            <Link to="/about-us" className="text-2xl font-medium link">
               About Us
             </Link>
             <ScrollLink
@@ -184,8 +183,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-20}
-              className="text-md cursor-pointer"
-              activeClass="active-link"
+              className="text-2xl font-medium link"
             >
               Services
             </ScrollLink>
@@ -196,8 +194,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               offset={-20}
-              className="text-md cursor-pointer"
-              activeClass="active-link"
+              className="text-2xl font-medium link"
             >
               Contact Us
             </ScrollLink>
