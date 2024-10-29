@@ -148,7 +148,7 @@ const Header = () => {
           </button>
         </div>
         <div className="py-4 px-7 flex flex-col gap-4">
-          {landingPageHeaderLinks.map(({ id, link, title }) => (
+          {/* {landingPageHeaderLinks.map(({ id, link, title }) => (
             <ScrollLink
               onClick={() => setIsOpen(false)}
               key={id}
@@ -161,7 +161,46 @@ const Header = () => {
             >
               {title}
             </ScrollLink>
-          ))}
+          ))} */}
+          <ScrollLink
+              to="banner"
+              onClick={() => setIsOpen(false)}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-20}
+              className="text-md cursor-pointer"
+              activeClass="active-link"
+            >
+              Home
+            </ScrollLink>
+            <Link to="/about-us" className="text-md cursor-pointer">
+              About Us
+            </Link>
+            <ScrollLink
+              to="services"
+              onClick={() => setIsOpen(false)}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-20}
+              className="text-md cursor-pointer"
+              activeClass="active-link"
+            >
+              Services
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              onClick={() => setIsOpen(false)}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-20}
+              className="text-md cursor-pointer"
+              activeClass="active-link"
+            >
+              Contact Us
+            </ScrollLink>
         </div>
       </Drawer>
     </div>
