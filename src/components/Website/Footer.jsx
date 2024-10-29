@@ -32,7 +32,7 @@ const Footer = () => {
               <GrFacebookOption className="text-2xl" />
             </Link>
           </div>
-          <p className="max-w-[25rem] mt-3">Address: {clientDetails.address}</p>
+          {/* <p className="max-w-[25rem] mt-3">Address: {clientDetails.address}</p> */}
         </div>
         <div className="flex flex-col mt-6 sm:mt-0 sm:flex-row gap-7 md:gap-14">
           <div className="flex flex-col gap-3">

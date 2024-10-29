@@ -1,27 +1,25 @@
 import React from "react";
 import Header from "../../components/LandingPage/Header";
 import Banner from "../../components/Banner";
-import aboutImg from "../../assets/landing-about.png";
 import {
   appDevelopmentServices,
-  clientDetails,
+  industriesCompanyServe,
   webDevelopmentServices,
 } from "../../constants";
-import whyChooseUs from "../../assets/landing-whychooseus.png";
-import whyChooseUsBg from "../../assets/landing-whychooseus-bg.png";
-import { FaPhoneAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import Testimonials from "../../components/Testimonials";
 import GetInTouch from "../../components/GetInTouch";
 import Footer from "../../components/LandingPage/Footer";
-import WorkingProcess from "../../components/WorkingProcess";
+import icon1 from "../../assets/icons/successful-projects.png";
+import icon2 from "../../assets/icons/happy-customer.png";
+import icon3 from "../../assets/icons/industries.png";
+import HomePageServicesList from "../../components/Website/HomePageServicesList";
 
 const LandingPage = ({ page }) => {
   return (
     <>
       <Header />
-      <Banner page={page}/>
-      <section id="about-us" className="relative py-[5rem]">
+      <Banner page={page} />
+      {/* <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
           <h1
@@ -48,6 +46,74 @@ const LandingPage = ({ page }) => {
               alt="about"
               className="max-h-[25rem] w-full object-cover"
             />
+          </div>
+        </div>
+      </section> */}
+
+      <section className="py-[6rem]">
+        <div className="wrapper text-center">
+          <h2 data-aos="fade-up" className="heading max-w-6xl mx-auto">
+            Trusted by Forward-Thinking Businesses Across Industries
+          </h2>
+          <p data-aos="fade-up" className="description max-w-6xl mx-auto mt-2">
+            With a dedicated team and a results-driven approach, Anytech Work is
+            committed to delivering impactful, high-quality tech solutions that
+            drive business growth and innovation.
+          </p>
+
+          <div data-aos="fade-up" className="grid sm:grid-cols-3 gap-3 md:gap-10 mt-8 mb-5">
+            <div className="relative flex flex-col items-start px-4 lg:px-7 py-2 gap-2 border-l-2 border-gray-400">
+              <div className="flex w-full items-center gap-3 justify-between">
+                <h1 className="text-[3rem] md:text-[4rem] font-semibold text-primary">
+                  50+
+                </h1>
+                <div className="w-[5rem] h-[5rem] lg:w-[6rem] lg:h-[6rem] rounded-full bg-green-500 bg-opacity-25 p-4 flex justify-center items-center">
+                  {/* <FiCheckSquare className="text-[3rem] lg:text-6xl text-white" /> */}
+                  <img
+                    src={icon1}
+                    className="w-[4rem] lg:w-[5rem] object-contain"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p className="text-gray-600 text-lg font-light leading-tight text-start">
+                Successful Projects Completed
+              </p>
+            </div>
+            <div className="relative flex flex-col items-start px-4 lg:px-7 py-2 gap-2 border-l-2 border-gray-400">
+              <div className="flex w-full items-center gap-3 justify-between">
+                <h1 className="text-[3rem] md:text-[4rem] font-semibold text-primary">
+                  98%
+                </h1>
+                <div className="w-[5rem] h-[5rem] lg:w-[6rem] lg:h-[6rem] rounded-full bg-yellow-400 bg-opacity-20 p-4 flex justify-center items-center">
+                  <img
+                    src={icon2}
+                    className="w-[4rem] lg:w-[5rem] object-contain"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p className="text-gray-600 text-lg font-light leading-tight text-start">
+                Customer Satisfaction
+              </p>
+            </div>
+            <div className="relative flex flex-col items-start px-4 lg:px-7 py-2 gap-2 border-l-2 border-gray-400">
+              <div className="flex w-full items-center gap-3 justify-between">
+                <h1 className="text-[3rem] md:text-[4rem] font-semibold text-primary">
+                  10+
+                </h1>
+                <div className="w-[5rem] h-[5rem] lg:w-[6rem] lg:h-[6rem] rounded-full bg-blue-500 bg-opacity-25 p-4 flex justify-center items-center">
+                  <img
+                    src={icon3}
+                    className="w-[4rem] lg:w-[5rem] object-contain"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p className="text-gray-600 text-lg font-light leading-tight text-start">
+                Serving Diverse Industries
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -123,8 +189,49 @@ const LandingPage = ({ page }) => {
           </div>
         </div>
       </section>
-      <WorkingProcess />
-      <section className="py-[5rem] relative">
+
+      <HomePageServicesList/>
+
+      <section className="wrapper py-[4rem]">
+        <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 text-center">
+            <h2 data-aos="fade-up" className="heading">
+              Industries We Serve
+            </h2>
+            <p data-aos="fade-up" className="mt-2 description mb-3">
+              We cater to a wide range of industries, delivering tailored AI and
+              tech solutions to meet specific needs:
+            </p>
+          </div>
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-7 mb-7">
+            {industriesCompanyServe.map((item) => (
+              <div
+                key={item.id}
+                data-aos="fade-up"
+                className="p-5 rounded-lg shadow-lg relative group overflow-hidden min-h-[13rem]"
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover absolute top-0 left-0 rounded group-hover:scale-110 transition-all duration-300"
+                />
+                <div className="w-full h-full absolute top-0 left-0 bg-[#1e1b42a0] group-hover:bg-black/60 transition-all duration-300"></div>
+                <div className="group-hover:translate-y-0 transition-all duration-300">
+                  <p className="group-hover:translate-y-0 translate-y-[4rem] text-center text-[1.7rem] font-bold tracking-wider relative z-10 text-white transition-all duration-300">
+                    {item.title}
+                  </p>
+                  <p className="group-hover:translate-y-0 translate-y-[9rem] text-gray-800 text-md mt-2 relative z-10 group-hover:text-white transition-all duration-300">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* <WorkingProcess /> */}
+      {/* <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
         <div className="wrapper mx-auto grid lg:grid-cols-2 gap-5 md:gap-10">
           <div data-aos="fade-right" className="flex flex-col gap-5">
@@ -204,8 +311,8 @@ const LandingPage = ({ page }) => {
             />
           </div>
         </div>
-      </section>
-      <Testimonials />
+      </section> */}
+      {/* <Testimonials /> */}
       <GetInTouch />
       <Footer />
     </>

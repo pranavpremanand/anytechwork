@@ -15,13 +15,13 @@
     @apply text-[#564fbe] font-semibold;
   }
   .primary-btn {
-    @apply bg-gradient-to-r text-base cursor-pointer font-medium from-[#B17CEE] to-[#6D4C8A] px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
+    @apply bg-gradient-to-r text-base cursor-pointer font-medium from-[#B17CEE] to-[#6D4C8A] min-w-[9rem] flex justify-center text-center px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
   }
   .secondary-btn {
-    @apply bg-[#5C5E60] text-base cursor-pointer font-medium px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
+    @apply bg-[#5C5E60] text-base cursor-pointer font-medium min-w-[9rem] flex justify-center text-center px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
   }
   .purple-btn {
-    @apply bg-primary hover:bg-primary/70 text-base cursor-pointer font-medium px-5 py-3 text-white transition-all duration-300 hover:-translate-y-1;
+    @apply bg-primary min-w-[9rem] flex justify-center text-center hover:bg-primary/70 text-base cursor-pointer font-medium px-5 py-3 text-white transition-all duration-300 hover:-translate-y-1;
   }
   .blurred-red-circle {
     @apply bg-[#ee7cc245] rounded-full blur-3xl absolute;

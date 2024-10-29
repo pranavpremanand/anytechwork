@@ -5,21 +5,20 @@ const GetInTouch = () => {
     <div id="contact" className="py-[5rem] relative">
       <div className="blurred-red-circle h-[25rem] w-[25rem] bottom-[2rem] right-3 -z-10"></div>
       <div className="blue-bg-shape bottom-[-2rem] left-[-2rem] -z-10 rotate-[-45deg]"></div>
-      <div className="wrapper grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:justify-items-stretch items-center gap-10">
+      <div className="wrapper grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:justify-items-stretch items-center gap-7">
         <div data-aos="fade-right" className="flex flex-col gap-5">
           <h1 className="heading text-center lg:text-start">
-            Innovation distinguishes between a leader and a follower.
+          Ready to Lead with Innovation? <br /> Let’s Start Your Project
           </h1>
-          <p className="font-medium text-center lg:text-start">
-            Let us guide you as you lead your industry with transformative
-            technology.
+          <p className="description text-center lg:text-start">
+          Reach out to discover how our tech solutions can propel your business forward.
           </p>
         </div>
         <div data-aos="fade-left" className="flex flex-col items-start gap-3">
           <p className="gradient-text uppercase">Let's connect</p>
           <div className="bg-gradient-to-b text-white from-[#5B3E9A] to-[#30284D] rounded-2xl w-fit p-7">
-            <h2 className="text-3xl font-medium">How May We Help You!</h2>
-            <form className="grid grid-cols-1 gap-3 mt-3">
+            <h2 className="text-3xl font-medium">Connect With Our Team to Get Started!</h2>
+            <form onSubmit={(e) => e.preventDefault()} className="grid grid-cols-1 gap-3 mt-3">
               <div className="grid lg:grid-cols-2 gap-3">
                 <div className="">
                   <label htmlFor="">Name*</label>
@@ -54,11 +53,10 @@ const GetInTouch = () => {
                   />
                 </div>
                 <div className="">
-                  <label htmlFor="">Phone Number*</label>
+                  <label htmlFor="">Phone Number</label>
                   <input
                     type="tel"
                     className="w-full outline-none p-3 rounded-lg text-black"
-                    required
                     autoComplete="off"
                     placeholder="Enter your phone number"
                   />

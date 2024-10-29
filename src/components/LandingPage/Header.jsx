@@ -63,7 +63,7 @@ const Header = () => {
             data-aos="fade-down"
             className="hidden lg:flex items-center gap-5"
           >
-            {landingPageHeaderLinks.map((link) => (
+            {/* {landingPageHeaderLinks.map((link) => (
               <ScrollLink
                 key={link.id}
                 to={link.link}
@@ -76,7 +76,32 @@ const Header = () => {
               >
                 {link.title}
               </ScrollLink>
-            ))}
+            ))} */}
+            <ScrollLink
+              to="banner"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-20}
+              className="text-md cursor-pointer"
+              activeClass="active-link"
+            >
+              Home
+            </ScrollLink>
+            <Link to="/about-us" className="text-md cursor-pointer">
+              About Us
+            </Link>
+            <ScrollLink
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-20}
+              className="text-md cursor-pointer"
+              activeClass="active-link"
+            >
+              Services
+            </ScrollLink>
             <ScrollLink
               to="contact"
               spy={true}

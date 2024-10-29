@@ -1,4 +1,10 @@
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -15,6 +21,7 @@ import BlockChain from "./pages/ServicesPages/BlockChain";
 import RPA from "./pages/ServicesPages/RPA";
 import ARAndVR from "./pages/ServicesPages/ARAndVR";
 import NormalizeSlash from "./components/NormalizeSlash";
+import WhatsAppIcon from "./components/WhatsAppIcon";
 
 Aos.init({
   once: true,
@@ -27,6 +34,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <NormalizeSlash>
+        <WhatsAppIcon />
         <Routes>
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/" element={<Home />} />

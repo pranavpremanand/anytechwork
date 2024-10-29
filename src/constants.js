@@ -184,8 +184,10 @@ export const allServices = [
     img: service2,
     title: "Web Development",
     description:
-    "In order to scale new customer acquisition and retention commerce brands, we work across",
+      "In order to scale new customer acquisition and retention commerce brands, we work across",
     link: "/services/web-development",
+    smallPara:
+      "In today's interconnected world, website applications have become an integral part of our daily lives. From e-commerce platforms to social media networks, from educational resources to government services, these digital tools have revolutionized the way we interact, communicate, and conduct business. The development of website applications is a complex process that involves a blend of creativity, technical expertise, and a deep understanding of user needs. \n\n At the core of website application development lies the interplay of front-end and back-end development. The front-end, or client-side, is what the user sees and interacts with.",
   },
   {
     id: 2,
@@ -194,6 +196,8 @@ export const allServices = [
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
     link: "/services/app-development",
+    smallPara:
+      "Mobile applications have become an integral part of our daily lives, transforming the way we communicate, consume information, and conduct business. The development of mobile apps requires a unique set of skills and considerations, as compared to website development.\n\n One of the key differences between mobile and web app development is the platform-specific nature of mobile apps. While web apps can be accessed on any device with a web browser, mobile apps are designed for specific platforms, such as iOS and Android. This necessitates developing separate versions for each platform, often using different programming languages and development environments.",
   },
   {
     id: 3,
@@ -202,6 +206,8 @@ export const allServices = [
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
     link: "/services/artificial-intelligence",
+    smallPara:
+      "Artificial Intelligence (AI) has rapidly evolved from a concept in science fiction to a transformative force reshaping industries and societies. AI development, the process of creating intelligent systems capable of learning, reasoning, and problem-solving, is driving innovation and revolutionizing the way we live and work.\n\nAt the heart of AI development is the creation of algorithms and models that enable machines to learn from data and improve their performance over time. Machine learning, a subset of AI, involves training algorithms on large datasets to recognize patterns, make predictions, and automate tasks. Deep learning, a more advanced form of machine learning, utilizes artificial neural networks to process complex data and learn from it.",
   },
   {
     id: 4,
@@ -210,6 +216,8 @@ export const allServices = [
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
     link: "/services/blockchain",
+    smallPara:
+      "Blockchain technology, a decentralized and distributed ledger system, has emerged as a disruptive force with the potential to transform industries across the globe. Blockchain development involves creating and implementing applications that leverage the unique features of blockchain technology to enhance security, efficiency, and transparency.\n\n At the core of blockchain is a distributed network of nodes that maintain a shared ledger of transactions. Each transaction is recorded as a block and added to the chain, creating an immutable and tamper-proof record. This decentralized nature eliminates the need for intermediaries, such as banks or clearinghouses, fostering trust and reducing the risk of fraud.",
   },
   {
     id: 5,
@@ -218,6 +226,8 @@ export const allServices = [
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
     link: "/services/rpa",
+    smallPara:
+      "Robotic Process Automation (RPA) is a technology that uses software robots to automate repetitive, rule-based tasks. These software robots can mimic human actions, interacting with applications and systems to perform tasks that were previously done manually. RPA has emerged as a powerful tool for businesses looking to improve efficiency, reduce costs, and enhance accuracy.\n\n One of the key benefits of RPA is its ability to automate repetitive tasks that are prone to human error. By eliminating manual intervention, RPA can significantly reduce the risk of mistakes and ensure consistency in processes. This can lead to improved quality and compliance, as well as reduced operational costs.",
   },
   {
     id: 6,
@@ -226,6 +236,8 @@ export const allServices = [
     description:
       "In order to scale new customer acquisition and retention commerce brands, we work across",
     link: "/services/ar-vr",
+    smallPara:
+      "Augmented Reality (AR) and Virtual Reality (VR) are immersive technologies that are rapidly transforming the way we interact with the digital world. AR overlays digital information onto the real world, enhancing our perception of reality, while VR creates entirely simulated environments that transport us to different places and experiences.\n\n AR and VR have a wide range of applications across various industries. In gaming, they offer immersive experiences that blur the lines between the real and virtual worlds. In education, they can provide interactive and engaging learning experiences. In healthcare, they are used for training, surgery simulations, and rehabilitation. In architecture and design, they allow for virtual walkthroughs of buildings and spaces before construction.",
   },
 ];
 
@@ -306,5 +318,75 @@ export const testimonials = [
     title: "Operations Manager at SteelTech Manufacturing",
     description:
       "Our manufacturing process was riddled with inefficiencies due to manual data entry and repetitive tasks. Anytechwork’s Robotic Process Automation (RPA) solution helped us automate critical processes, from order fulfillment to inventory management. The RPA bots they developed have been instrumental in cutting down human errors, reducing operational costs, and improving productivity.",
+  },
+];
+
+// industry company serve
+export const industriesCompanyServe = [
+  {
+    id: 1,
+    title: "Healthcare",
+    img: require("./assets/industries/Healthcare.jpg"),
+    desc: "Transforming patient care and operations with AI-powered diagnostics, data analytics, and telemedicine solutions.",
+  },
+  {
+    id: 2,
+    title: "E-commerce & Retail",
+    img: require("./assets/industries/E-commerce & Retail.jpg"),
+    desc: "Enhancing customer experiences with personalized recommendations, inventory management, and secure online transactions.",
+  },
+  {
+    id: 3,
+    title: "Finance & Banking",
+    img: require("./assets/industries/Finance & Banking.jpg"),
+    desc: "Streamlining processes with AI, blockchain, and machine learning for fraud detection, risk assessment, and smarter investment strategies.",
+  },
+  {
+    id: 4,
+    title: "Energy",
+    img: require("./assets/industries/Energy.jpg"),
+    desc: "Optimizing energy management, forecasting, and sustainability with IoT and data-driven AI solutions.",
+  },
+  {
+    id: 5,
+    title: "Real Estate",
+    img: require("./assets/industries/Real Estate.jpg"),
+    desc: "Revolutionizing property management, investment decisions, and customer engagement with AI and predictive analytics.",
+  },
+  {
+    id: 6,
+    title: "Manufacturing",
+    img: require("./assets/industries/Manufacturing.jpg"),
+    desc: "Driving automation, predictive maintenance, and operational efficiency with AI, machine learning, and IoT technologies.",
+  },
+  {
+    id: 7,
+    title: "Data Analytics & Business Intelligence",
+    img: require("./assets/industries/Data Analytics & Business Intelligence.jpg"),
+    desc: "Actionable insights from big data to drive informed decision-making and growth strategies.",
+  },
+  {
+    id: 8,
+    title: "IoT Development",
+    img: require("./assets/industries/IoT Development.jpg"),
+    desc: "Connecting devices and systems to enhance automation and operational efficiency",
+  },
+  {
+    id: 9,
+    title: "Logistics & Supply Chain",
+    img: require("./assets/industries/Logistics & Supply Chain.jpg"),
+    desc: "Enhancing logistics, inventory, and supply chain management with AI and IoT-enabled tracking and optimization.",
+  },
+  {
+    id: 10,
+    title: "Education",
+    img: require("./assets/industries/Education.jpg"),
+    desc: " Personalized learning experiences, predictive analytics for student outcomes, and automated administrative processes using AI and ML.",
+  },
+  {
+    id: 10,
+    title: "Telecom",
+    img: require("./assets/industries/Telecom.jpg"),
+    desc: " Boosting network efficiency, customer service, and fraud prevention through AI-driven solutions.",
   },
 ];
