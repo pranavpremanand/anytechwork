@@ -20,8 +20,8 @@ const Header = () => {
   const { pathname } = useLocation();
   return (
     <div className="fixed z-40 top-0 left-0 w-full">
-      <div className="grid grid-cols-1">
-        <div className="wrapper w-[95%] hidden md:flex bg-[#17012C] py-3 px-8 rounded-b-[2rem]">
+      <div className="bg-[#EDF6FFC2]">
+        {/* <div className="wrapper w-[95%] hidden md:flex bg-[#17012C] py-3 px-8 rounded-b-[2rem]">
           <div className="flex w-full justify-between gap-5 items-center">
             <div className="flex items-center gap-5">
               <Link
@@ -48,8 +48,8 @@ const Header = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="max-w-7xl md:mx-auto md:w-[95%] bg-[#EDF6FFC2] flex justify-between items-center gap-5 md:rounded-b-[2rem] py-3 px-5 sm:px-8">
+        </div> */}
+        <div className="wrapper flex w-full justify-between items-center gap-5 py-3 px-5 sm:px-8">
           <Link to="/">
             <img
               loading="lazy"
@@ -71,7 +71,7 @@ const Header = () => {
               </Link>
             ))}
             <Link to="/contact-us" className="primary-btn">
-              Work With Us
+              Contact Us
             </Link>
           </div>
           <div

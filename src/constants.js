@@ -54,11 +54,11 @@ export const landingPageHeaderLinks = [
     title: "Services",
     link: "services",
   },
-  {
-    id: 4,
-    title: "Contact Us",
-    link: "contact",
-  },
+  // {
+  //   id: 4,
+  //   title: "Contact Us",
+  //   link: "contact",
+  // },
 ];
 
 // website pages
@@ -78,11 +78,11 @@ export const websitePagesLinks = [
     title: "Our Services",
     link: "/services",
   },
-  {
-    id: 4,
-    title: "Contact Us",
-    link: "/contact-us",
-  },
+  // {
+  //   id: 4,
+  //   title: "Contact Us",
+  //   link: "/contact-us",
+  // },
 ];
 
 // working process

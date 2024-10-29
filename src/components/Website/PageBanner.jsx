@@ -8,7 +8,7 @@ const PageBanner = ({ title }) => {
   return (
     <div className="min-h-[45vh] md:min-h-[70vh] w-full page-banner relative">
       <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
-      <ReactPlayer url={vid} playing loop muted width="100%" height="100%" />
+      <ReactPlayer url={vid} playing loop muted width="100%" height="100%" playsinline/>
       <div className="absolute z-20 py-2 top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
         <h1 data-aos="fade-up" className="heading text-white text-center">
           {title}
