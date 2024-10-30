@@ -49,7 +49,7 @@ const Header = () => {
             </div>
           </div>
         </div> */}
-        <div className="wrapper flex w-full justify-between items-center gap-5 py-3 px-5 sm:px-8">
+        <div className="flex w-full justify-between items-center gap-5 py-3 px-5 sm:px-8">
           <Link to="/">
             <img
               loading="lazy"

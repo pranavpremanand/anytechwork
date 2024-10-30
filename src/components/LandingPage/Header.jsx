@@ -44,7 +44,7 @@ const Header = () => {
             </div>
           </div>
         </div> */}
-        <div className="wrapper flex justify-between items-center gap-5 py-3 px-5 sm:px-8">
+        <div className="flex justify-between items-center gap-5 py-3 px-5 sm:px-8">
           <ScrollLink
             to="banner"
             spy={true}

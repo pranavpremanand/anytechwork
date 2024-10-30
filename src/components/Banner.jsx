@@ -22,13 +22,25 @@ const Banner = ({ page }) => {
       <div className="w-full absolute left-0 top-0 h-full">
         <div className="wrapper h-full flex flex-col items-start justify-center ml-0">
           {pathname === "/" ? (
-            <h1
-              data-aos="fade-right"
-              className="heading text-white max-w-[50rem]"
-            >
-              Welcome to ANYTECHWORK: <br />
-              Innovating Tomorrow, Empowering Businesses Today
-            </h1>
+            // <h1
+            //   data-aos="fade-right"
+            //   className="heading text-white max-w-[50rem]"
+            // >
+            //   Welcome to ANYTECHWORK: <br />
+            //   Innovating Tomorrow, Empowering Businesses Today
+            // </h1>
+            <>
+              <h1
+                data-aos="fade-right"
+                className="heading text-white max-w-[50rem]"
+              >
+                Looking to Transform Your Ideas into Impactful Solutions?
+              </h1>
+              <p className="description text-white mt-2 max-w-[40rem]">
+                From Concept to Completion, We Provide a Full Spectrum of
+                Technology Services Tailored to Your Needs.
+              </p>
+            </>
           ) : (
             <>
               <h1

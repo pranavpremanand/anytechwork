@@ -8,7 +8,7 @@ import { GrFacebookOption } from "react-icons/gr";
 const Footer = () => {
   return (
     <div className="bg-[#17012C] py-[2rem] text-white">
-      <div className="wrapper flex flex-col gap-3 sm:flex-row items-center justify-between">
+      <div className="px-5 sm:px-10 flex flex-col gap-3 sm:flex-row items-center justify-between">
         <div className="flex flex-col gap-3 items-start">
           <img
             loading="lazy"
