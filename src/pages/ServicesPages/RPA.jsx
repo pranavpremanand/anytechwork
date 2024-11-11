@@ -36,13 +36,7 @@ const RPA = () => {
         <h2 data-aos="fade-up" className="text-3xl font-semibold">
           What We Provide
         </h2>
-        <p data-aos="fade-up" className="description">
-          At tempus aenean sapien torquent sed diam class efficitur mus morbi
-          eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac
-          fermentum orci ad pharetra consequat justo duis turpis lorem elit dui
-          consectetur magnis lacinia odio per placerat vestibulum volutpat
-          mauris mollis primis imperdiet posu ere ex enim gravida cras congue
-        </p>
+        
         <img
           data-aos="fade-up"
           src={img2}

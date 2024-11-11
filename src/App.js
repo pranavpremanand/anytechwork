@@ -33,8 +33,8 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <WhatsAppIcon />
       <NormalizeSlash>
-        <WhatsAppIcon />
         <Routes>
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/" element={<Home />} />

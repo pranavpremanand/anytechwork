@@ -32,9 +32,9 @@ import client4 from "./assets/client-4.png";
 
 // client details
 export const clientDetails = {
-  phone: "+91-9014944329",
+  phone: "+91-00000000",
   address:
-    "Flat-355, 2nd Floor, Block-A, Mahaveer Orchids, Choodasandra, Bengaluru, Karnataka 560099, India",
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam maxime obcaecati praesentium in",
 };
 
 // landing page header links
