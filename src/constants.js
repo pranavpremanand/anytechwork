@@ -37,6 +37,7 @@ export const clientDetails = {
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam maxime obcaecati praesentium in",
 };
 
+
 // landing page header links
 export const landingPageHeaderLinks = [
   {
