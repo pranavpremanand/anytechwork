@@ -12,12 +12,15 @@ import Footer from "../../components/LandingPage/Footer";
 import HomePageServicesList from "../../components/HomePageServicesList";
 import TrustWorthySection from "../../components/TrustWorthySection";
 import IndustriesWeServe from "../../components/IndustriesWeServe";
+import BrandLogos from "../../components/BrandLogos";
+import Portfolio from "../../components/Portfolio";
 
 const LandingPage = ({ page }) => {
   return (
     <>
       <Header />
       <Banner page={page} />
+      <GetInTouch/>
       {/* <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
@@ -125,7 +128,7 @@ const LandingPage = ({ page }) => {
 
       <HomePageServicesList />
       <IndustriesWeServe />
-
+      <Portfolio/>
       {/* <WorkingProcess /> */}
       {/* <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
@@ -209,7 +212,9 @@ const LandingPage = ({ page }) => {
         </div>
       </section> */}
       {/* <Testimonials /> */}
+      
       <GetInTouch />
+      <BrandLogos/>
       <Footer />
     </>
   );

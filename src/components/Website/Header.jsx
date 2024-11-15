@@ -119,6 +119,13 @@ const Header = () => {
               {title}
             </Link>
           ))}
+          <Link
+            onClick={() => setIsOpen(false)}
+            to="/contact-us"
+            className="text-2xl font-mediumduration-300 link"
+          >
+            Contact Us
+          </Link>
         </div>
       </Drawer>
     </div>

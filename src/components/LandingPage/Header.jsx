@@ -103,6 +103,17 @@ const Header = () => {
               Services
             </ScrollLink>
             <ScrollLink
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="text-md cursor-pointer"
+              activeClass="active-link"
+            >
+              Portfolio
+            </ScrollLink>
+            <ScrollLink
               to="contact"
               spy={true}
               smooth={true}

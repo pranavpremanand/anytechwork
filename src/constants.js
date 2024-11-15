@@ -390,3 +390,67 @@ export const industriesCompanyServe = [
     desc: " Boosting network efficiency, customer service, and fraud prevention through AI-driven solutions.",
   },
 ];
+
+
+// portfolio images (web development)
+export const webPortfolio = [
+  {
+    id: 1,
+    img: require("./assets/web_projects/1.webp"),
+    title: "FE-Finance",
+  },
+  {
+    id: 2,
+    img: require("./assets/web_projects/2.webp"),
+    title: "Ocxee",
+  },
+  {
+    id: 3,
+    img: require("./assets/web_projects/3.webp"),
+    title: "Leaderbridge",
+  },
+  {
+    id: 4,
+    img: require("./assets/web_projects/4.webp"),
+    title: "Gigzio",
+  },
+  {
+    id: 5,
+    img: require("./assets/web_projects/5.webp"),
+    title: "FE Group",
+  },
+  {
+    id: 6,
+    img: require("./assets/web_projects/6.webp"),
+    title: "V Talkz",
+  },
+];
+
+// portfolio images (app development)
+export const appPortfolio = [
+  {
+    id: 1,
+    img: require("./assets/app_projects/1.webp"),
+    title: "PartEx",
+  },
+  {
+    id: 2,
+    img: require("./assets/app_projects/2.webp"),
+    title: "Find A Driver",
+  },
+  {
+    id: 3,
+    img: require("./assets/app_projects/3.webp"),
+    title: "Glowsy",
+  },
+  {
+    id: 4,
+    img: require("./assets/app_projects/4.webp"),
+    title: "Artisan Express",
+  },
+  {
+    id: 5,
+    img: require("./assets/app_projects/5.webp"),
+    title: "House of Deliverance",
+  },
+];
