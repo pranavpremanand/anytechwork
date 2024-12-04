@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React, { lazy, memo } from "react";
 import Header from "../../components/LandingPage/Header";
 import {
   appDevelopmentServices,
@@ -213,4 +213,4 @@ const LandingPage = ({ page }) => {
   );
 };
 
-export default LandingPage;
+export default memo(LandingPage);
