@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Website/Banner";
-import aboutImg from "../assets/landing-about.png";
+import aboutImg from "../assets/landing-about.webp";
 import { clientDetails, workingProcess } from "../constants";
 import whyChooseUs from "../assets/landing-whychooseus.png";
 import whyChooseUsBg from "../assets/landing-whychooseus-bg.png";

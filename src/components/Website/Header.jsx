@@ -24,8 +24,10 @@ const Header = () => {
         <div className="flex w-full justify-between items-center gap-5 py-3 wrapper">
           <Link to="/">
             <img
-              loading="lazy"
+              fetchPriority="high"
               src={logo}
+              width="200"
+              height="100"
               alt="logo"
               className="h-[3rem] sm:h-[4rem]"
             />

@@ -2,13 +2,13 @@ import React from "react";
 import PageBanner from "../components/Website/PageBanner";
 import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";
-import img1 from "../assets/aboutus-1.jpg";
-import img2 from "../assets/aboutus-2.png";
-import img3 from "../assets/aboutus-3.jpg";
+import img1 from "../assets/aboutus-1.webp";
+import img2 from "../assets/aboutus-2.webp";
+import img3 from "../assets/aboutus-3.webp";
 import { Link } from "react-router-dom";
 import Testimonials from "../components/Testimonials";
-import bannerImg from "../assets/about-us-banner.jpg";
-import bgImg from "../assets/1111.jpg";
+import bannerImg from "../assets/about-us-banner.webp";
+import bgImg from "../assets/1111.webp";
 import BrandLogos from "../components/BrandLogos";
 
 const AboutUs = () => {

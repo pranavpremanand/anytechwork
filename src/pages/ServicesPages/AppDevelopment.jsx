@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/services-details/app-development1.jpg";
-import img2 from "../../assets/services-details/app-development2.jpeg";
+import img1 from "../../assets/services-details/app-development1.webp";
+import img2 from "../../assets/services-details/app-development2.webp";
 
 const AppDevelopment = () => {
   return (

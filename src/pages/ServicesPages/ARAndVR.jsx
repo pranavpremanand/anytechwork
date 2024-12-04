@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/services-details/arvr1.jpg";
-import img2 from "../../assets/services-details/arvr2.jpeg";
+import img1 from "../../assets/services-details/arvr1.webp";
+import img2 from "../../assets/services-details/arvr2.webp";
 
 const ARAndVR = () => {
   return (

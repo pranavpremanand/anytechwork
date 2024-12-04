@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/services-details/blockchain1.jpg";
-import img2 from "../../assets/services-details/blockchain2.jpg";
+import img1 from "../../assets/services-details/blockchain1.webp";
+import img2 from "../../assets/services-details/blockchain2.webp";
 
 const BlockChain = () => {
   return (

@@ -7,7 +7,7 @@ import { allServices } from "../constants";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
 import Footer from "../components/Website/Footer";
-import banner from "../assets/services-banner.jpg";
+import banner from "../assets/services-banner.webp";
 import HomePageServicesList from "../components/HomePageServicesList";
 
 const OurServices = () => {

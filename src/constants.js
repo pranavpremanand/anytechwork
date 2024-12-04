@@ -17,12 +17,12 @@ import flutterAppIcon from "./assets/icons/flutter-development.png";
 import hybridAppIcon from "./assets/icons/hybrid-app-development.png";
 
 // all services images
-import service1 from "./assets/service1.jpg";
-import service2 from "./assets/service2.jpg";
-import service3 from "./assets/service3.jpg";
-import service4 from "./assets/service4.jpg";
-import service5 from "./assets/service5.jpg";
-import service6 from "./assets/service6.jpeg";
+import service1 from "./assets/service1.webp";
+import service2 from "./assets/service2.webp";
+import service3 from "./assets/service3.webp";
+import service4 from "./assets/service4.webp";
+import service5 from "./assets/service5.webp";
+import service6 from "./assets/service6.webp";
 
 // clients
 import client1 from "./assets/client-1.png";
@@ -119,7 +119,7 @@ export const webDevelopmentServices = [
     id: 1,
     title: "E-commerence Websites",
     icon: ecomWebIcon,
-    img: require("./assets/landingpage-services-imgs/ecommerce.jpg"),
+    img: require("./assets/landingpage-services-imgs/ecommerce.webp"),
     description:
       "Empowering your online business with tailored ecommerce solutions. Our platforms boost customer engagement, streamline operations, and drive revenue growth. ",
   },
@@ -127,7 +127,7 @@ export const webDevelopmentServices = [
     id: 2,
     title: "Social Media Websites",
     icon: socialWebIcon,
-    img: require("./assets/landingpage-services-imgs/socialmedia.jpg"),
+    img: require("./assets/landingpage-services-imgs/socialmedia.webp"),
     description:
       "Get custom social media websites that captivate and engage your audience, driving growth and brand loyalty effortlessly.",
   },
@@ -135,7 +135,7 @@ export const webDevelopmentServices = [
     id: 3,
     title: "Landing Websites",
     icon: landingWebIcon,
-    img: require("./assets/landingpage-services-imgs/landing.jpg"),
+    img: require("./assets/landingpage-services-imgs/landing.webp"),
     description:
       " Creating high-converting landing pages that capture attention and drive action. Tailored designs that showcase your brand’s message and maximize conversions.",
   },
@@ -143,7 +143,7 @@ export const webDevelopmentServices = [
     id: 4,
     title: "Custom Websites",
     icon: customWebIcon,
-    img: require("./assets/landingpage-services-imgs/customweb.jpg"),
+    img: require("./assets/landingpage-services-imgs/customweb.webp"),
     description:
       "Delivering tailor-made websites designed to meet your unique business needs. Our solutions blend creativity and functionality for an exceptional online experience.",
   },
@@ -155,7 +155,7 @@ export const appDevelopmentServices = [
     id: 1,
     title: "iOS App Development",
     icon: iosAppIcon,
-    img: require("./assets/landingpage-services-imgs/ios.jpg"),
+    img: require("./assets/landingpage-services-imgs/ios.webp"),
     description:
       "Our skilled developers work with both Swift and Objective-C to build robust and efficient apps. We optimize your app for performance, speed, and responsiveness.",
   },
@@ -163,7 +163,7 @@ export const appDevelopmentServices = [
     id: 2,
     title: "Android App Development",
     icon: androidAppIcon,
-    img: require("./assets/landingpage-services-imgs/android.jpg"),
+    img: require("./assets/landingpage-services-imgs/android.webp"),
     description:
       "We design and develop tailor-made Android apps that align with your vision and business goals.Proficient in both Java and Kotlin, we build robust and efficient apps.",
   },
@@ -171,7 +171,7 @@ export const appDevelopmentServices = [
     id: 3,
     title: "Flutter App Development",
     icon: flutterAppIcon,
-    img: require("./assets/landingpage-services-imgs/flutter.jpg"),
+    img: require("./assets/landingpage-services-imgs/flutter.webp"),
     description:
       "Flutter allows you to build apps for both iOS and Android using a single codebase. While Flutter's default web app architecture presents challenges, we can overcome them with smart strategies. ",
   },
@@ -179,7 +179,7 @@ export const appDevelopmentServices = [
     id: 4,
     title: "Hybrid App Development",
     icon: hybridAppIcon,
-    img: require("./assets/landingpage-services-imgs/hybrid.jpg"),
+    img: require("./assets/landingpage-services-imgs/hybrid.webp"),
     description:
       "We build feature-rich hybrid apps tailored to your business needs. We create mobile-friendly apps that work seamlessly across iOS and Android devices.",
   },

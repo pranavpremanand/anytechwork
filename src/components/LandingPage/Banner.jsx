@@ -74,7 +74,7 @@ const Banner = ({ page }) => {
             <img
               src={robot}
               id="robot"
-              className="w-[25rem] relative z-0"
+              className="w-[22rem] relative z-0"
               alt="robot"
             />
           </div>

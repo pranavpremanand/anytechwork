@@ -24,6 +24,8 @@ const IndustriesWeServe = () => {
                 <img
                   src={item.img}
                   alt={item.title}
+                  width='250'
+                  height='200'
                   className="w-full h-full object-cover absolute top-0 left-0 rounded group-hover:scale-110 transition-all duration-300"
                 />
                 <div className="w-full h-full absolute top-0 left-0 bg-[#1e1b42a0] group-hover:bg-black/60 transition-all duration-300"></div>

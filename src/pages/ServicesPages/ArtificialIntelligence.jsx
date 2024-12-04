@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/services-details/ai1.jpg";
-import img2 from "../../assets/services-details/ai2.jpg";
+import img1 from "../../assets/services-details/ai1.webp";
+import img2 from "../../assets/services-details/ai2.webp";
 
 const ArtificialIntelligence = () => {
   return (

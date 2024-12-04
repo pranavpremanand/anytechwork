@@ -53,9 +53,11 @@ const Header = () => {
             className="cursor-pointer"
           >
             <img
-              loading="lazy"
+              fetchPriority="high"
               src={logo}
               alt="logo"
+              width='200'
+              height='100'
               className="h-[3rem] sm:h-[4rem]"
             />
           </ScrollLink>

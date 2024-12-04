@@ -12,8 +12,10 @@ const Footer = () => {
       <div className="px-5 sm:px-10 flex flex-col gap-3 sm:flex-row justify-between">
         <div className="flex flex-col gap-3 items-start">
           <img
-            loading="lazy"
+            fetchPriority="high"
             src={logo}
+            width="200"
+            height="100"
             alt="logo"
             className="h-[4rem] object-contain"
           />

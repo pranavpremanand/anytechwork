@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/services-details/rpa1.jpg";
-import img2 from "../../assets/services-details/rpa2.jpg";
+import img1 from "../../assets/services-details/rpa1.webp";
+import img2 from "../../assets/services-details/rpa2.webp";
 
 const RPA = () => {
   return (
