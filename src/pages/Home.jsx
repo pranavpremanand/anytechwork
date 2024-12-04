@@ -1,20 +1,25 @@
-import React, { lazy } from "react";
+import React, { lazy, memo, Suspense } from "react";
 import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";
 import CallToAction from "../components/CallToAction";
 
-const Banner  = lazy(() => import('../components/Website/Banner'));
-const TrustWorthySection = lazy(() => import('../components/TrustWorthySection'));
-const IndustriesWeServe = lazy(() => import('../components/IndustriesWeServe'));
-const HomePageServicesList = lazy(() => import('../components/HomePageServicesList'));
-const GetInTouch = lazy(() => import('../components/GetInTouch'));
+const Banner = lazy(() => import("../components/Website/Banner"));
+const TrustWorthySection = lazy(() =>
+  import("../components/TrustWorthySection")
+);
+const IndustriesWeServe = lazy(() => import("../components/IndustriesWeServe"));
+const HomePageServicesList = lazy(() =>
+  import("../components/HomePageServicesList")
+);
+const GetInTouch = lazy(() => import("../components/GetInTouch"));
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Banner />
-      {/* <section id="about-us" className="relative py-[5rem]">
+      <Suspense fallback={<LoadingFallback />}>
+        <Banner />
+        {/* <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
           <h1
@@ -45,11 +50,11 @@ const Home = () => {
         </div>
       </section> */}
 
-      <TrustWorthySection />
-      <HomePageServicesList />
-      <CallToAction />
+        <TrustWorthySection />
+        <HomePageServicesList />
+        <CallToAction />
 
-      {/* <section className="py-[5rem] relative">
+        {/* <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
         <div className="wrapper mx-auto grid lg:grid-cols-2 gap-5 md:gap-10">
           <div data-aos="fade-right" className="flex flex-col gap-5">
@@ -132,13 +137,22 @@ const Home = () => {
           </div>
         </div>
       </section> */}
-      <IndustriesWeServe />
-      {/* <BestServicesSlider /> */}
-      {/* <Testimonials /> */}
-      <GetInTouch />
+        <IndustriesWeServe />
+        {/* <BestServicesSlider /> */}
+        {/* <Testimonials /> */}
+        <GetInTouch />
+      </Suspense>
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default memo(Home);
+
+const LoadingFallback = () => {
+  return (
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-primary"></div>
+    </div>
+  );
+};

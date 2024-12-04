@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, memo, Suspense, useEffect } from "react";
 import NormalizeSlash from "./components/NormalizeSlash";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { LoadingSpinner } from "./components/LoadingSpinner";
@@ -37,7 +37,7 @@ function App() {
     <BrowserRouter>
       <SpinnerContextProvider>
         <LoadingSpinnerContext />
-        <Suspense fallback={<LoadingSpinner />}>
+        {/* <Suspense fallback={<LoadingSpinner />}> */}
           <ScrollToTop />
           <NormalizeSlash>
             <WhatsAppIcon />
@@ -72,13 +72,13 @@ function App() {
               />
             </Routes>
           </NormalizeSlash>
-        </Suspense>
+        {/* </Suspense> */}
       </SpinnerContextProvider>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default memo(App);
 
 // scroll to top
 const ScrollToTop = () => {
