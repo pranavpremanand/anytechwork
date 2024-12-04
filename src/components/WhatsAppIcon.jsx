@@ -6,6 +6,7 @@ import { clientDetails } from "../constants";
 const WhatsAppIcon = () => {
   return (
     <Link
+      title="WhatsApp"
       rel="noreferrer"
       target="_blank"
       to={"https://api.whatsapp.com/send/?phone=" + clientDetails.phone}

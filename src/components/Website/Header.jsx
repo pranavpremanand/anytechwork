@@ -1,9 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
-import {
-  websitePagesLinks,
-} from "../../constants";
+import { websitePagesLinks } from "../../constants";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
@@ -41,7 +39,8 @@ const Header = () => {
               Contact Us
             </Link>
           </div>
-          <div
+          <button
+            title="Menu"
             className="block lg:hidden justify-self-end"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -52,7 +51,7 @@ const Header = () => {
               rounded
               toggle={setIsOpen}
             />
-          </div>
+          </button>
         </div>
       </div>
       <Drawer
@@ -69,6 +68,7 @@ const Header = () => {
             className="h-[3rem] object-contain"
           />
           <button
+            title="Close"
             onClick={() => setIsOpen(false)}
             className="text-black text-[2rem]"
           >
