@@ -7,9 +7,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import banner from "../assets/contact-us-banner.webp";
+import { InquiryForm } from "../components/GetInTouch";
 
 const PageBanner = lazy(() => import("../components/Website/PageBanner"));
-const InquiryForm = lazy(() => import("../components/GetInTouch"));
 
 const ContactUs = () => {
   return (
@@ -22,7 +22,7 @@ const ContactUs = () => {
         description="Reach out to discover how our tech solutions can propel your business forward."
       />
       <div className="wrapper">
-        <div className="grid grid-cols-2 gap-10 py-[5rem]">
+        <div className="grid lg:grid-cols-2 gap-10 py-[5rem]">
           <div data-aos="fade-right" className="flex flex-col gap-5 pt-[2rem]">
             <h1 className="heading text-center lg:text-start">
               Innovate. Transform. Succeed.
@@ -38,7 +38,9 @@ const ContactUs = () => {
               starts here.
             </p>
           </div>
-          <InquiryForm />
+          <div className="flex justify-center">
+            <InquiryForm />
+          </div>
         </div>
       </div>
       <div
