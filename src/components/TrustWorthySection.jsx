@@ -33,6 +33,9 @@ const TrustWorthySection = () => {
                   src={icon1}
                   className="w-[4rem] lg:w-[5rem] object-contain"
                   alt=""
+                  loading="lazy"
+                  width='100'
+                  height='100'
                 />
               </div>
             </div>
