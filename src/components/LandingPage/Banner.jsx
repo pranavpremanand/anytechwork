@@ -3,7 +3,7 @@ import vid from "../../assets/vids/banner.mp4";
 import ReactPlayer from "react-player";
 import robot from "../../assets/ai-robot.png";
 import gsap from "gsap";
-import bannerThumb from "../../assets/vids/banner-thumb.png";
+import bannerThumb from "../../assets/vids/banner-thumb.webp";
 
 const Banner = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");

@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import robot from "../../assets/ai-robot.png";
 import gsap from "gsap";
-import bannerThumb from "../../assets/vids/banner-thumb.png";
+import bannerThumb from "../../assets/vids/banner-thumb.webp";
 
 const Banner = () => {
   const [isVideoLoaded, setVideoLoaded] = useState(false);
