@@ -29,9 +29,9 @@ const Banner = ({ page }) => {
         <img
           src={bannerThumb}
           alt=""
-          fetchPriority="high"
-          width="1920"
-          height="1080"
+          loading="lazy"
+          width="800"
+          height="800"
           className="w-full h-full object-cover"
         />
       )}
