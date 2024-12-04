@@ -1,15 +1,16 @@
-import React from "react";
-import PageBanner from "../components/Website/PageBanner";
+import React, { lazy } from "react";
 import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";
 import img1 from "../assets/aboutus-1.webp";
 import img2 from "../assets/aboutus-2.webp";
 import img3 from "../assets/aboutus-3.webp";
 import { Link } from "react-router-dom";
-import Testimonials from "../components/Testimonials";
 import bannerImg from "../assets/about-us-banner.webp";
 import bgImg from "../assets/1111.webp";
-import BrandLogos from "../components/BrandLogos";
+
+const PageBanner = lazy(() => import("../components/Website/PageBanner"));
+const Testimonials = lazy(() => import("../components/Testimonials"));
+const BrandLogos = lazy(() => import("../components/BrandLogos"));
 
 const AboutUs = () => {
   return (

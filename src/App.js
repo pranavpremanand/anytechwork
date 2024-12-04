@@ -5,25 +5,26 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import LandingPage from "./pages/LandingPage/LandingPage";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Home from "./pages/Home";
-import OurServices from "./pages/OurServices";
-import ContactUs from "./pages/ContactUs";
-import AboutUs from "./pages/AboutUs";
-import { Suspense, useEffect } from "react";
-import WebDevelopment from "./pages/ServicesPages/WebDevelopment";
-import ServicePageLayout from "./components/Website/ServicePageLayout";
-import AppDevelopment from "./pages/ServicesPages/AppDevelopment";
-import ArtificialIntelligence from "./pages/ServicesPages/ArtificialIntelligence";
-import BlockChain from "./pages/ServicesPages/BlockChain";
-import RPA from "./pages/ServicesPages/RPA";
-import ARAndVR from "./pages/ServicesPages/ARAndVR";
+import { lazy, Suspense, useEffect } from "react";
 import NormalizeSlash from "./components/NormalizeSlash";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { LoadingSpinner } from "./components/LoadingSpinner";
 import SpinnerContextProvider, { LoadingSpinnerContext } from "./components/SpinnerContext";
+
+const Home = lazy(() => import("./pages/Home"));
+const OurServices = lazy(() => import("./pages/OurServices"));
+const ContactUs = lazy(() => import("./pages/ContactUs"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const WebDevelopment = lazy(() => import("./pages/ServicesPages/WebDevelopment"));
+const ServicePageLayout = lazy(() => import("./components/Website/ServicePageLayout"));
+const AppDevelopment = lazy(() => import("./pages/ServicesPages/AppDevelopment"));
+const ArtificialIntelligence = lazy(() => import("./pages/ServicesPages/ArtificialIntelligence"));
+const BlockChain = lazy(() => import("./pages/ServicesPages/BlockChain"));
+const RPA = lazy(() => import("./pages/ServicesPages/RPA"));
+const ARAndVR = lazy(() => import("./pages/ServicesPages/ARAndVR"));
+const LandingPage = lazy(() => import("./pages/LandingPage/LandingPage"));
 
 Aos.init({
   once: true,

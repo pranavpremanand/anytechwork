@@ -1,7 +1,5 @@
-import React from "react";
+import React, { lazy } from "react";
 import Header from "../components/Website/Header";
-import PageBanner from "../components/Website/PageBanner";
-import { InquiryForm } from "../components/GetInTouch";
 import Footer from "../components/Website/Footer";
 import map from "../assets/map.webp";
 import { clientDetails } from "../constants";
@@ -9,6 +7,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import banner from "../assets/contact-us-banner.webp";
+
+const PageBanner = lazy(() => import("../components/Website/PageBanner"));
+const InquiryForm = lazy(() => import("../components/GetInTouch"));
 
 const ContactUs = () => {
   return (

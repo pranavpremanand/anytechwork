@@ -1,19 +1,26 @@
-import React from "react";
+import React, { lazy } from "react";
 import Header from "../../components/LandingPage/Header";
 import {
   appDevelopmentServices,
   webDevelopmentServices,
 } from "../../constants";
-import Testimonials from "../../components/Testimonials";
-import GetInTouch from "../../components/GetInTouch";
 import Footer from "../../components/LandingPage/Footer";
-import HomePageServicesList from "../../components/HomePageServicesList";
-import TrustWorthySection from "../../components/TrustWorthySection";
-import IndustriesWeServe from "../../components/IndustriesWeServe";
-import BrandLogos from "../../components/BrandLogos";
-import Portfolio from "../../components/Portfolio";
-import Banner from "../../components/LandingPage/Banner";
 import CallToAction from "../../components/CallToAction";
+
+const GetInTouch = lazy(() => import("../../components/GetInTouch"));
+const Testimonials = lazy(() => import("../../components/Testimonials"));
+const HomePageServicesList = lazy(() =>
+  import("../../components/HomePageServicesList")
+);
+const TrustWorthySection = lazy(() =>
+  import("../../components/TrustWorthySection")
+);
+const IndustriesWeServe = lazy(() =>
+  import("../../components/IndustriesWeServe")
+);
+const BrandLogos = lazy(() => import("../../components/BrandLogos"));
+const Portfolio = lazy(() => import("../../components/Portfolio"));
+const Banner = lazy(() => import("../../components/LandingPage/Banner"));
 
 const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { lazy } from "react";
 import Header from "../components/Website/Header";
-import PageBanner from "../components/Website/PageBanner";
-import WorkingProcess from "../components/WorkingProcess";
-import Testimonials from "../components/Testimonials";
 import Footer from "../components/Website/Footer";
 import banner from "../assets/services-banner.webp";
-import HomePageServicesList from "../components/HomePageServicesList";
+const HomePageServicesList = lazy(() => import("../components/HomePageServicesList"));
+const PageBanner = lazy(() => import("../components/Website/PageBanner"));
+const WorkingProcess = lazy(() => import("../components/WorkingProcess"));
+const Testimonials = lazy(() => import("../components/Testimonials"));
 
 const OurServices = () => {
   return (
