@@ -9,7 +9,7 @@
     @apply max-w-[140rem] mx-auto px-3 sm:px-8;
   }
   .heading-1 {
-    @apply text-[2.5rem] md:text-[3.5rem] leading-tight font-semibold;
+    @apply text-[2rem] md:text-5xl leading-tight font-semibold;
   }
   .heading {
     @apply text-[2rem] md:text-5xl leading-tight font-semibold;
