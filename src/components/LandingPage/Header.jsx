@@ -51,7 +51,7 @@ const Header = () => {
               fetchPriority="high"
               src={logo}
               alt="logo"
-              width="200"
+              width="150"
               height="100"
               className="h-[3rem] sm:h-[4rem]"
             />

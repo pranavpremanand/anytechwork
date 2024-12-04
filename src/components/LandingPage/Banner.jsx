@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import vid from "../../assets/vids/banner.mp4";
 import ReactPlayer from "react-player";
 import robot from "../../assets/ai-robot.png";
 import gsap from "gsap";
+import bannerThumb from "../../assets/vids/banner-thumb.png";
 
 const Banner = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
+  const [isVideoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -23,6 +25,16 @@ const Banner = ({ page }) => {
   }, []);
   return (
     <div id="banner" className="h-screen banner relative">
+      {!isVideoLoaded && (
+        <img
+          src={bannerThumb}
+          alt=""
+          fetchPriority="high"
+          width="1920"
+          height="1080"
+          className="w-full h-full object-cover"
+        />
+      )}
       <ReactPlayer
         url={vid}
         playing
@@ -31,6 +43,7 @@ const Banner = ({ page }) => {
         width="100%"
         height="100%"
         playsinline
+        onReady={() => setVideoLoaded(true)}
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
       <div className="w-full absolute left-0 top-0 h-full">

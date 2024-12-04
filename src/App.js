@@ -37,7 +37,7 @@ function App() {
     <BrowserRouter>
       <SpinnerContextProvider>
         <LoadingSpinnerContext />
-        {/* <Suspense fallback={<LoadingSpinner />}> */}
+        <Suspense fallback={<LoadingSpinner />}>
           <ScrollToTop />
           <NormalizeSlash>
             <WhatsAppIcon />
@@ -72,7 +72,7 @@ function App() {
               />
             </Routes>
           </NormalizeSlash>
-        {/* </Suspense> */}
+        </Suspense>
       </SpinnerContextProvider>
     </BrowserRouter>
   );

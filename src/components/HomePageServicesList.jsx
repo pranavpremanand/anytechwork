@@ -39,7 +39,7 @@ const HomePageServicesList = () => {
             </div>
           </div>
         </div>
-        <div className="w-full grid grid-cols-2 gap-5">
+        <div className="w-full flex flex-col-reverse sm:grid grid-cols-2 gap-5">
           <div data-aos="fade-up" className="py-[2rem]">
             <h4 className="text-3xl font-medium">{selectedService.title}</h4>
             {/* <p
@@ -63,7 +63,7 @@ const HomePageServicesList = () => {
               Click for More
             </Link>
           </div>
-          <img width='500' height='550' src={selectedService.img} className="h-full object-cover rounded-lg" alt="" />
+          <img width='500' height='550' src={selectedService.img} className="h-full aspect-video sm:aspect-auto min-h-[10rem] object-cover rounded-lg" alt="" />
         </div>
       </div>
     </section>

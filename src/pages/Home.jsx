@@ -1,4 +1,4 @@
-import React, { lazy, memo, Suspense } from "react";
+import React, { lazy, memo } from "react";
 import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";
 import CallToAction from "../components/CallToAction";
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Suspense fallback={<LoadingFallback />}>
+      {/* <Suspense fallback={<LoadingFallback />}> */}
         <Banner />
         {/* <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
@@ -141,7 +141,7 @@ const Home = () => {
         {/* <BestServicesSlider /> */}
         {/* <Testimonials /> */}
         <GetInTouch />
-      </Suspense>
+      {/* </Suspense> */}
       <Footer />
     </>
   );
@@ -149,10 +149,10 @@ const Home = () => {
 
 export default memo(Home);
 
-const LoadingFallback = () => {
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-primary"></div>
-    </div>
-  );
-};
+// const LoadingFallback = () => {
+//   return (
+//     <div className="flex items-center justify-center min-h-screen">
+//       <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-primary"></div>
+//     </div>
+//   );
+// };

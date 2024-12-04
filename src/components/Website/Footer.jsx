@@ -13,7 +13,7 @@ const Footer = () => {
           <img
             fetchPriority="high"
             src={logo}
-            width="200"
+            width="150"
             height="100"
             alt="logo"
             className="h-[4rem] object-contain"
