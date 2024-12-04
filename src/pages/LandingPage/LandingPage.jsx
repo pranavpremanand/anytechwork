@@ -95,6 +95,8 @@ const LandingPage = ({ page }) => {
                 <img
                   src={item.img}
                   alt={item.title}
+                  width='400'
+                  height='300'
                   className="absolute group-hover:scale-125 transition-all duration-500 w-full h-full inset-0 z-0 object-cover"
                 />
                 <div className="absolute w-full h-full inset-0 z-0 bg-black/65"></div>

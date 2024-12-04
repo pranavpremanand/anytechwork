@@ -63,7 +63,7 @@ const HomePageServicesList = () => {
               Click for More
             </Link>
           </div>
-          <img src={selectedService.img} className="h-full object-cover rounded-lg" alt="" />
+          <img width='500' height='550' src={selectedService.img} className="h-full object-cover rounded-lg" alt="" />
         </div>
       </div>
     </section>
