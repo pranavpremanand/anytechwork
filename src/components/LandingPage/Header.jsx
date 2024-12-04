@@ -51,8 +51,8 @@ const Header = () => {
               fetchPriority="high"
               src={logo}
               alt="logo"
-              width='200'
-              height='100'
+              width="200"
+              height="100"
               className="h-[3rem] sm:h-[4rem]"
             />
           </ScrollLink>
@@ -121,7 +121,8 @@ const Header = () => {
               Contact Us
             </ScrollLink>
           </div>
-          <div
+          <button
+            title="Menu"
             className="block lg:hidden justify-self-end"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -132,7 +133,7 @@ const Header = () => {
               rounded
               toggle={setIsOpen}
             />
-          </div>
+          </button>
         </div>
       </div>
       <Drawer
@@ -149,6 +150,7 @@ const Header = () => {
             className="h-[3rem] object-contain"
           />
           <button
+            title="Close"
             onClick={() => setIsOpen(false)}
             className="text-black text-[2rem]"
           >
@@ -171,41 +173,41 @@ const Header = () => {
             </ScrollLink>
           ))} */}
           <ScrollLink
-              to="banner"
-              onClick={() => setIsOpen(false)}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-20}
-              className="text-2xl font-medium link"
-            >
-              Home
-            </ScrollLink>
-            <Link to="/about-us" className="text-2xl font-medium link">
-              About Us
-            </Link>
-            <ScrollLink
-              to="services"
-              onClick={() => setIsOpen(false)}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-20}
-              className="text-2xl font-medium link"
-            >
-              Services
-            </ScrollLink>
-            <ScrollLink
-              to="contact"
-              onClick={() => setIsOpen(false)}
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-20}
-              className="text-2xl font-medium link"
-            >
-              Contact Us
-            </ScrollLink>
+            to="banner"
+            onClick={() => setIsOpen(false)}
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-20}
+            className="text-2xl font-medium link"
+          >
+            Home
+          </ScrollLink>
+          <Link to="/about-us" className="text-2xl font-medium link">
+            About Us
+          </Link>
+          <ScrollLink
+            to="services"
+            onClick={() => setIsOpen(false)}
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-20}
+            className="text-2xl font-medium link"
+          >
+            Services
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            onClick={() => setIsOpen(false)}
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-20}
+            className="text-2xl font-medium link"
+          >
+            Contact Us
+          </ScrollLink>
         </div>
       </Drawer>
     </div>
