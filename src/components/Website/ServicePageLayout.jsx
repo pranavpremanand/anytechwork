@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import ServiceDetailsBanner from "./ServiceDetailsBanner";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { allServices, clientDetails } from "../../constants";
 import { IoIosArrowRoundForward } from "react-icons/io";

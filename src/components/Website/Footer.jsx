@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
-import { allServices, clientDetails } from "../../constants";
 
 const Footer = () => {
   return (

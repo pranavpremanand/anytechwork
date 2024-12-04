@@ -1,12 +1,7 @@
 import React from "react";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
-import { GrFacebookOption } from "react-icons/gr";
-import { IoMailOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import { Link as ScrollLink } from "react-scroll";
-import { clientDetails, landingPageHeaderLinks } from "../../constants";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";

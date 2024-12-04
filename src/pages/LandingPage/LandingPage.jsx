@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../../components/LandingPage/Header";
 import {
   appDevelopmentServices,
-  industriesCompanyServe,
   webDevelopmentServices,
 } from "../../constants";
 import Testimonials from "../../components/Testimonials";

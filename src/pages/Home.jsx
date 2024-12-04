@@ -1,12 +1,5 @@
 import React from "react";
 import Banner from "../components/Website/Banner";
-import aboutImg from "../assets/landing-about.webp";
-import { clientDetails, workingProcess } from "../constants";
-import whyChooseUs from "../assets/landing-whychooseus.png";
-import whyChooseUsBg from "../assets/landing-whychooseus-bg.png";
-import { FaPhoneAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import Testimonials from "../components/Testimonials";
 import GetInTouch from "../components/GetInTouch";
 import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";

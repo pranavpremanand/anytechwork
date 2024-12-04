@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 import OurServices from "./pages/OurServices";
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import WebDevelopment from "./pages/ServicesPages/WebDevelopment";
 import ServicePageLayout from "./components/Website/ServicePageLayout";
 import AppDevelopment from "./pages/ServicesPages/AppDevelopment";
@@ -22,6 +22,8 @@ import RPA from "./pages/ServicesPages/RPA";
 import ARAndVR from "./pages/ServicesPages/ARAndVR";
 import NormalizeSlash from "./components/NormalizeSlash";
 import WhatsAppIcon from "./components/WhatsAppIcon";
+import { LoadingSpinner } from "./components/LoadingSpinner";
+import SpinnerContextProvider, { LoadingSpinnerContext } from "./components/SpinnerContext";
 
 Aos.init({
   once: true,
@@ -32,40 +34,45 @@ Aos.init({
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <NormalizeSlash>
-        <WhatsAppIcon />
-        <Routes>
-          <Route path="*" element={<Navigate to="/" replace />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/services" element={<OurServices />} />
+      <SpinnerContextProvider>
+        <LoadingSpinnerContext />
+        <Suspense fallback={<LoadingSpinner />}>
+          <ScrollToTop />
+          <NormalizeSlash>
+            <WhatsAppIcon />
+            <Routes>
+              <Route path="*" element={<Navigate to="/" replace />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/contact-us" element={<ContactUs />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/services" element={<OurServices />} />
 
-          {/* Services Detail Routes with Layout */}
-          <Route path="/services" element={<ServicePageLayout />}>
-            <Route path="web-development" element={<WebDevelopment />} />
-            <Route path="app-development" element={<AppDevelopment />} />
-            <Route
-              path="artificial-intelligence"
-              element={<ArtificialIntelligence />}
-            />
-            <Route path="blockchain" element={<BlockChain />} />
-            <Route path="rpa" element={<RPA />} />
-            <Route path="ar-vr" element={<ARAndVR />} />
-          </Route>
+              {/* Services Detail Routes with Layout */}
+              <Route path="/services" element={<ServicePageLayout />}>
+                <Route path="web-development" element={<WebDevelopment />} />
+                <Route path="app-development" element={<AppDevelopment />} />
+                <Route
+                  path="artificial-intelligence"
+                  element={<ArtificialIntelligence />}
+                />
+                <Route path="blockchain" element={<BlockChain />} />
+                <Route path="rpa" element={<RPA />} />
+                <Route path="ar-vr" element={<ARAndVR />} />
+              </Route>
 
-          {/* Generic Routes */}
-          <Route
-            path="/web-development"
-            element={<LandingPage page={"web-development"} />}
-          />
-          <Route
-            path="/app-development"
-            element={<LandingPage page={"app-development"} />}
-          />
-        </Routes>
-      </NormalizeSlash>
+              {/* Generic Routes */}
+              <Route
+                path="/web-development"
+                element={<LandingPage page={"web-development"} />}
+              />
+              <Route
+                path="/app-development"
+                element={<LandingPage page={"app-development"} />}
+              />
+            </Routes>
+          </NormalizeSlash>
+        </Suspense>
+      </SpinnerContextProvider>
     </BrowserRouter>
   );
 }
