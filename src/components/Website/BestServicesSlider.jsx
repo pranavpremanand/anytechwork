@@ -124,7 +124,7 @@ const BestServicesSlider = () => {
                     <h3 className="text-[1.5rem] font-semibold my-5 leading-tight">
                       {title}
                     </h3>
-                    <p className="text-sm font-light text-gray-500">
+                    <p className="text-sm   text-gray-500">
                       {description}
                     </p>
                   </div>

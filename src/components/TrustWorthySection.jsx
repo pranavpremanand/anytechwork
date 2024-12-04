@@ -39,7 +39,7 @@ const TrustWorthySection = () => {
                 />
               </div>
             </div>
-            <p className="text-gray-600 text-lg font-light leading-tight text-start">
+            <p className="text-gray-600 text-lg   leading-tight text-start">
               Successful Projects Completed
             </p>
           </div>
@@ -56,7 +56,7 @@ const TrustWorthySection = () => {
                 />
               </div>
             </div>
-            <p className="text-gray-600 text-lg font-light leading-tight text-start">
+            <p className="text-gray-600 text-lg   leading-tight text-start">
               Customer Satisfaction
             </p>
           </div>
@@ -73,7 +73,7 @@ const TrustWorthySection = () => {
                 />
               </div>
             </div>
-            <p className="text-gray-600 text-lg font-light leading-tight text-start">
+            <p className="text-gray-600 text-lg   leading-tight text-start">
               Tech Experts
             </p>
           </div>
@@ -90,7 +90,7 @@ const TrustWorthySection = () => {
                 />
               </div>
             </div>
-            <p className="text-gray-600 text-lg font-light leading-tight text-start">
+            <p className="text-gray-600 text-lg   leading-tight text-start">
               Serving Diverse Industries
             </p>
           </div>

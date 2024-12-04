@@ -39,7 +39,7 @@
     @apply bg-gradient-to-r text-transparent from-primary to-[#2563eb] bg-clip-text text-center font-medium;
   }
   .description {
-    @apply text-lg font-light leading-snug;
+    @apply text-lg leading-snug;
   }
 }
 

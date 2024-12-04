@@ -50,7 +50,7 @@ const OurServices = () => {
                     className="object-contain w-[70%] max-w-[15rem]"
                   />
                   <h6 className="text-xl font-semibold">{item.title}</h6>
-                  <p className="text-md font-light max-w-[80%] text-gray-600">
+                  <p className="text-md   max-w-[80%] text-gray-600">
                     {item.description}
                   </p>
                 </div>
