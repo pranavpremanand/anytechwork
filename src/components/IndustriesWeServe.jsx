@@ -31,7 +31,7 @@ const IndustriesWeServe = () => {
                   <p className="group-hover:translate-y-0 translate-y-[4rem] text-center text-[1.7rem] font-bold tracking-wider relative z-10 text-white transition-all duration-300">
                     {item.title}
                   </p>
-                  <p className="group-hover:translate-y-0 translate-y-[9rem] text-gray-800 text-md mt-2 relative z-10 group-hover:text-white transition-all duration-300">
+                  <p className="group-hover:translate-y-0 translate-y-[9rem] text-gray-800 text-lg mt-2 relative z-10 group-hover:text-white transition-all duration-300">
                     {item.desc}
                   </p>
                 </div>

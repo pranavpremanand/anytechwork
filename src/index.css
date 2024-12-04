@@ -6,7 +6,10 @@
 
 @layer utilities {
   .wrapper {
-    @apply max-w-7xl mx-auto px-4;
+    @apply max-w-[140rem] mx-auto px-3 sm:px-8;
+  }
+  .heading-1 {
+    @apply text-[2.5rem] md:text-[3.5rem] leading-tight font-semibold;
   }
   .heading {
     @apply text-[2rem] md:text-5xl leading-tight font-semibold;
@@ -21,7 +24,7 @@
     @apply bg-[#5C5E60] text-base cursor-pointer font-medium min-w-[9rem] flex justify-center text-center px-5 py-3 text-white rounded-full transition-all duration-300 hover:-translate-y-1;
   }
   .purple-btn {
-    @apply bg-primary min-w-[9rem] flex justify-center text-center hover:bg-primary/70 text-base cursor-pointer font-medium px-5 py-3 text-white transition-all duration-300 hover:-translate-y-1;
+    @apply bg-primary min-w-[9rem] flex justify-center text-center hover:bg-primary/80 text-base cursor-pointer font-medium px-5 py-3 text-white transition-all duration-300 hover:-translate-y-1;
   }
   .blurred-red-circle {
     @apply bg-[#ee7cc245] rounded-full blur-3xl absolute;
@@ -36,7 +39,7 @@
     @apply bg-gradient-to-r text-transparent from-primary to-[#2563eb] bg-clip-text text-center font-medium;
   }
   .description {
-    @apply text-base font-light leading-relaxed;
+    @apply text-lg font-light leading-snug;
   }
 }
 
@@ -64,21 +67,37 @@ html {
   object-fit: cover;
   position: absolute;
   height: 100%;
-}
-
-/* page banner video */
-.page-banner video {
-  object-fit: cover;
-  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 /* header mobile menu offcanvas */
 .EZDrawer .EZDrawer__container {
-  background: #b7aebf !important;
+  background: #f7f6f8 !important;
   width: 80vw !important;
 }
 
 /* line height for heading */
 .heading {
   line-height: 1.2;
+}
+
+/* fly animation styles */
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+  33.3% {
+    transform: translateY(25%) rotate(15deg);
+  }
+  66.77% {
+    transform: translateY(-25%) translateX(10%) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.fly_animation {
+  animation: fly 10s ease infinite;
 }

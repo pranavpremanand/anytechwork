@@ -7,15 +7,38 @@ import { allServices } from "../constants";
 import { Link } from "react-router-dom";
 import { FiArrowUpRight } from "react-icons/fi";
 import Footer from "../components/Website/Footer";
+import banner from "../assets/services-banner.jpg";
+import HomePageServicesList from "../components/HomePageServicesList";
 
 const OurServices = () => {
   return (
     <>
       <Header />
-      <PageBanner title={"Our Services"} />
+      <PageBanner
+        title={
+          "Are outdated processes and technology holding your business back from reaching its full potential?"
+        }
+        banner={banner}
+        position={"left"}
+        // description="In today’s fast-paced world, keeping up with technology can be
+        //     challenging. Many businesses face obstacles like inefficiencies and
+        //     missed opportunities, which can slow down growth and progress. At
+        //     AnyTechWork, we help businesses overcome these challenges by
+        //     simplifying the complex and empowering them to achieve more."
+      />
       <section className="py-[5rem]">
         <div className="wrapper">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-6 md:gap-10">
+          <p className="description text-center">
+            In today’s fast-paced world, keeping up with technology can be
+            challenging. Many businesses face obstacles like inefficiencies and
+            missed opportunities, which can slow down growth and progress. At
+            AnyTechWork, we help businesses overcome these challenges by
+            simplifying the complex and empowering them to achieve more.
+          </p>
+          <div className="">
+            <HomePageServicesList />
+          </div>
+          {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-6 md:gap-10">
             {allServices.map((item) => (
               <Link
                 to={item.link}
@@ -42,7 +65,7 @@ const OurServices = () => {
                 </Link>
               </Link>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
       <WorkingProcess />

@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/services-details/rpa1.jpeg";
-import img2 from "../../assets/services-details/rpa2.jpeg";
+import img1 from "../../assets/services-details/rpa1.jpg";
+import img2 from "../../assets/services-details/rpa2.jpg";
 
 const RPA = () => {
   return (
@@ -9,7 +9,7 @@ const RPA = () => {
         data-aos="fade-up"
         src={img1}
         loading="lazy"
-        className="h-[25rem] object-contain rounded-3xl object-center"
+        className="h-[25rem] object-cover rounded-3xl object-center"
         alt="rpa"
       />
       <div className="flex flex-col gap-4 md:px-5">

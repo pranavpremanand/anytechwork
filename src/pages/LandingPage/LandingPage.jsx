@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../components/LandingPage/Header";
-import Banner from "../../components/Banner";
 import {
   appDevelopmentServices,
   industriesCompanyServe,
@@ -14,13 +13,19 @@ import TrustWorthySection from "../../components/TrustWorthySection";
 import IndustriesWeServe from "../../components/IndustriesWeServe";
 import BrandLogos from "../../components/BrandLogos";
 import Portfolio from "../../components/Portfolio";
+import Banner from "../../components/LandingPage/Banner";
+import CallToAction from "../../components/CallToAction";
 
 const LandingPage = ({ page }) => {
+  const isWebDevelopment = Boolean(page === "web-development");
+  const servicesList = isWebDevelopment
+    ? webDevelopmentServices
+    : appDevelopmentServices;
   return (
     <>
       <Header />
       <Banner page={page} />
-      <GetInTouch/>
+      <GetInTouch />
       {/* <section id="about-us" className="relative py-[5rem]">
         <div className="blurred-red-circle h-[25rem] w-[25rem] top-[-10rem] left-[-10rem] -z-10"></div>
         <div className="wrapper">
@@ -66,69 +71,49 @@ const LandingPage = ({ page }) => {
             className="heading text-center max-w-6xl whitespace-pre-line capitalize"
           >
             {/* We provide the Best IT solution services */}
-            {page === "web-development" &&
-              "Your website is your digital storefront;\n Make sure it reflects your brand’s essence."}
-            {page === "app-development" &&
-              "In the age of smartphones, a mobile app is the key to customer engagement."}
+            {isWebDevelopment
+              ? "Your website is your digital storefront;\n Make sure it reflects your brand’s essence."
+              : "In the age of smartphones, a mobile app is the key to customer engagement."}
           </h1>
-          <p
-            data-aos="fade-up"
-            className="text-center max-w-6xl text-md md:text-base font-light"
-          >
-            {page === "web-development" &&
-              "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results."}
-            {page === "app-development" &&
-              "Each app we develop is a powerful tool designed to improve productivity, fostering greater engagement and empowering your company to thrive in an increasingly mobile-focused landscape."}
+          <p data-aos="fade-up" className="text-center max-w-6xl description">
+            {isWebDevelopment
+              ? "We believe that a great website should not only look good but also function flawlessly, driving conversions and providing measurable results."
+              : "Each app we develop is a powerful tool designed to improve productivity, fostering greater engagement and empowering your company to thrive in an increasingly mobile-focused landscape."}
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 mx-auto max-w-7xl mt-4">
-            {page === "web-development" &&
-              webDevelopmentServices.map((item) => (
-                <div
-                  data-aos="fade-up"
-                  className="flex flex-col gap-2 items-center shadow-xl transition-all duration-300 bg-gradient-to-tr from-white to-primary/20 rounded-lg p-5"
-                >
-                  <div className="mb-5 w-[12rem] h-[12rem] p-3 rounded-full bg-primary/20 flex items-center justify-center">
-                    <img
-                      loading="lazy"
-                      src={item.icon}
-                      alt="icon"
-                      className="w-[7rem] grayscale object-contain"
-                    />
-                  </div>
-                  <h6 className="font-medium text-2xl">{item.title}</h6>
-                  <p className="text-gray-700 text-md md:text-base font-light">
-                    {item.description}
-                  </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 mt-4">
+            {servicesList.map((item) => (
+              <div
+                data-aos="fade-up"
+                className="relative group shadow-2xl group py-[5rem] md:py-[8rem] flex items-center overflow-hidden rounded-xl p-5"
+              >
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="absolute group-hover:scale-125 transition-all duration-500 w-full h-full inset-0 z-0 object-cover"
+                />
+                <div className="absolute w-full h-full inset-0 z-0 bg-black/65"></div>
+                {/* <div className="mb-5 w-[12rem] h-[12rem] p-3 rounded-full bg-primary/20 flex items-center justify-center">
+                  <img
+                    loading="lazy"
+                    src={item.icon}
+                    alt="icon"
+                    className="w-[7rem] grayscale object-contain"
+                  />
+                </div> */}
+                <div className="flex flex-col gap-2 items-center relative text-white z-10">
+                  <h6 className="font-medium text-3xl">{item.title}</h6>
+                  <p className=" text-lg text-center">{item.description}</p>
                 </div>
-              ))}
-
-            {page === "app-development" &&
-              appDevelopmentServices.map((item) => (
-                <div
-                  data-aos="fade-up"
-                  className="flex flex-col gap-2 items-center shadow-xl transition-all duration-300 bg-gradient-to-tr from-white to-primary/20 rounded-lg p-5"
-                >
-                  <div className="mb-5 w-[12rem] h-[12rem] p-3 rounded-full bg-primary/20 flex items-center justify-center">
-                    <img
-                      loading="lazy"
-                      src={item.icon}
-                      alt="icon"
-                      className="w-[7rem] grayscale object-contain"
-                    />
-                  </div>
-                  <h6 className="font-medium text-2xl">{item.title}</h6>
-                  <p className="text-gray-700 text-md md:text-base font-light">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <HomePageServicesList />
+      <CallToAction />
       <IndustriesWeServe />
-      <Portfolio/>
+      <Portfolio />
       {/* <WorkingProcess /> */}
       {/* <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
@@ -211,10 +196,10 @@ const LandingPage = ({ page }) => {
           </div>
         </div>
       </section> */}
-      {/* <Testimonials /> */}
-      
+      <CallToAction />
+      <Testimonials />
       <GetInTouch />
-      <BrandLogos/>
+      <BrandLogos />
       <Footer />
     </>
   );

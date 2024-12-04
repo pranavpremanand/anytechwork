@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/services-details/blockchain1.jpeg";
-import img2 from "../../assets/services-details/blockchain2.jpeg";
+import img1 from "../../assets/services-details/blockchain1.jpg";
+import img2 from "../../assets/services-details/blockchain2.jpg";
 
 const BlockChain = () => {
   return (
@@ -47,7 +47,7 @@ const BlockChain = () => {
           data-aos="fade-up"
           src={img2}
           loading="lazy"
-          className="h-[25rem] object-contain rounded-3xl object-center my-4"
+          className="h-[25rem] object-cover rounded-3xl object-center my-4"
           alt="blockchain"
         />
         <p data-aos="fade-up" className="description">

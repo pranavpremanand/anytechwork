@@ -17,24 +17,14 @@ const Footer = () => {
             alt="logo"
             className="h-[4rem] object-contain"
           />
-          <p className="max-w-[25rem]">
+          {/* <p className="max-w-[25rem]">
             Follow us on our social media handles to keep up to date with our
             latest work and announcements.
-          </p>
-          <div className="flex mt-3 gap-5 items-center">
-            <Link>
-              <FaLinkedinIn className="text-2xl" />
-            </Link>
-            <Link>
-              <AiFillInstagram className="text-2xl" />
-            </Link>
-            <Link>
-              <GrFacebookOption className="text-2xl" />
-            </Link>
-          </div>
+          </p> */}
+
           {/* <p className="max-w-[25rem] mt-3">Address: {clientDetails.address}</p> */}
         </div>
-        <div className="flex flex-col mt-6 sm:mt-0 sm:flex-row gap-7 md:gap-14">
+        {/* <div className="flex flex-col mt-6 sm:mt-0 sm:flex-row gap-7 md:gap-14">
           <div className="flex flex-col gap-3">
             <p className="text-lg font-semibold">Our Services</p>
             {allServices.map((item) => (
@@ -55,6 +45,17 @@ const Footer = () => {
               Contact Us
             </Link>
           </div>
+        </div> */}
+        <div className="flex mt-3 gap-5 items-center">
+          <Link>
+            <FaLinkedinIn className="text-2xl" />
+          </Link>
+          <Link>
+            <AiFillInstagram className="text-2xl" />
+          </Link>
+          <Link>
+            <GrFacebookOption className="text-2xl" />
+          </Link>
         </div>
       </div>
     </div>

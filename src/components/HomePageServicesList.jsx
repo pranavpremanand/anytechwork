@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { allServices } from "../constants";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const HomePageServicesList = () => {
   const [selectedService, setSelectedService] = useState(allServices[0]);
+  const { pathname } = useLocation();
 
   // set active service
   const handleServiceSelect = (item) => {
@@ -11,7 +12,9 @@ const HomePageServicesList = () => {
   };
   return (
     <section className="wrapper py-[2rem]">
-      <h1 className="heading text-center mb-8">Explore Our Offering</h1>
+      {!pathname.includes("/services") && (
+        <h1 className="heading text-center mb-8">Explore Our Offering</h1>
+      )}
       <div className="grid md:grid-cols-[38%_58%] gap-10 p-5 bg-primary/25 rounded-lg">
         <div className="w-full flex flex-col gap-10">
           <div
@@ -36,18 +39,31 @@ const HomePageServicesList = () => {
             </div>
           </div>
         </div>
-        <div className="w-full">
-          <div className="py-[2rem]">
-            <h4 data-aos="fade-up" className="text-3xl font-medium">
-              {selectedService.title}
-            </h4>
-            <p data-aos="fade-up" className="mt-4 description whitespace-pre-line">
+        <div className="w-full grid grid-cols-2 gap-5">
+          <div data-aos="fade-up" className="py-[2rem]">
+            <h4 className="text-3xl font-medium">{selectedService.title}</h4>
+            {/* <p
+              data-aos="fade-up"
+              className="mt-4 description whitespace-pre-line"
+            >
               {selectedService.smallPara}
-            </p>
-            <Link data-aos="fade-up" to={selectedService.link} className="secondary-btn w-fit mt-6">
-              Read More
+            </p> */}
+            <ul>
+              {selectedService.keyBenefits.map((item) => (
+                <li key={item} className="flex gap-2 mt-4">
+                  <span className="w-2 h-2 mt-[.6rem] flex items-center justify-center bg-black/80 rounded-full"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Link
+              to={selectedService.link}
+              className="purple-btn rounded-full w-fit mt-6"
+            >
+              Click for More
             </Link>
           </div>
+          <img src={selectedService.img} className="h-full object-cover rounded-lg" alt="" />
         </div>
       </div>
     </section>

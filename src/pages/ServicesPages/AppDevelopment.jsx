@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/services-details/app-development1.jpeg";
+import img1 from "../../assets/services-details/app-development1.jpg";
 import img2 from "../../assets/services-details/app-development2.jpeg";
 
 const AppDevelopment = () => {
@@ -9,7 +9,7 @@ const AppDevelopment = () => {
         data-aos="fade-up"
         src={img1}
         loading="lazy"
-        className="h-[25rem] object-contain rounded-3xl object-center"
+        className="h-[25rem] object-cover object-top rounded-3xl"
         alt="app development"
       />
       <div className="flex flex-col gap-4 md:px-5">

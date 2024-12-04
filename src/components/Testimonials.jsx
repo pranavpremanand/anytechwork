@@ -4,7 +4,7 @@ import { useKeenSlider } from "keen-slider/react";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import { testimonials } from "../constants";
 
-const animation = { duration: 25000, easing: (t) => t };
+const animation = { duration: 30000, easing: (t) => t };
 
 const Testimonials = () => {
   const [sliderRef] = useKeenSlider({
@@ -14,6 +14,7 @@ const Testimonials = () => {
     slides: {
       perView: 3,
       spacing: 30,
+      origin: "center",
     },
     breakpoints: {
       "(max-width: 768px)": {
@@ -53,7 +54,7 @@ const Testimonials = () => {
   });
   return (
     <div
-      className="py-[5rem] relative bg-[#c4daf86f]"
+      className="py-[5rem] mt-[5rem] mb-[3rem] relative bg-[#c4daf86f]"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="blue-bg-shape left-0 top-0 rotate-45"></div>
@@ -68,7 +69,7 @@ const Testimonials = () => {
         </h1>
       </div>
       <div data-aos="fade-left" ref={sliderRef} className="keen-slider">
-        {testimonials.map(({ id, img, title, name, description }, index) => (
+        {testimonials.concat(testimonials).map(({ id, img, title, name, description }, index) => (
           <div key={id} className="keen-slider__slide">
             <div className="flex flex-col items-center bg-white p-5 mx-2 rounded-xl h-full">
               {/* <img
@@ -84,7 +85,7 @@ const Testimonials = () => {
               <div className="h-full flex flex-col justify-between">
                 <p className="description">" {description} "</p>
                 <div className="w-full flex gap-3 items-center mt-4">
-                  <div className="min-w-[4.5rem] max-w-[4.5rem] min-h-[4.5rem] max-h-[4.5rem] rounded-full overflow-hidden bg-gray-300"></div>
+                  {/* <div className="min-w-[4.5rem] max-w-[4.5rem] min-h-[4.5rem] max-h-[4.5rem] rounded-full overflow-hidden bg-gray-300"></div> */}
                   <div className="flex flex-col gap-1">
                     <h3 className="text-lg font-medium">{name}</h3>
                     <p className="text-sm text-wrap">{title}</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/Banner";
+import Banner from "../components/Website/Banner";
 import aboutImg from "../assets/landing-about.png";
 import { clientDetails, workingProcess } from "../constants";
 import whyChooseUs from "../assets/landing-whychooseus.png";
@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 import Testimonials from "../components/Testimonials";
 import GetInTouch from "../components/GetInTouch";
 import Header from "../components/Website/Header";
-import BestServicesSlider from "../components/Website/BestServicesSlider";
 import Footer from "../components/Website/Footer";
 import TrustWorthySection from "../components/TrustWorthySection";
 import IndustriesWeServe from "../components/IndustriesWeServe";
 import HomePageServicesList from "../components/HomePageServicesList";
+import CallToAction from "../components/CallToAction";
 
 const Home = () => {
   return (
@@ -53,6 +53,7 @@ const Home = () => {
 
       <TrustWorthySection />
       <HomePageServicesList />
+      <CallToAction />
 
       {/* <section className="py-[5rem] relative">
         <div className="blue-bg-shape -z-10 right-[-5%] rotate-[125deg] top-1/2 -translate-y-1/2"></div>
@@ -138,7 +139,7 @@ const Home = () => {
         </div>
       </section> */}
       <IndustriesWeServe />
-      <BestServicesSlider />
+      {/* <BestServicesSlider /> */}
       {/* <Testimonials /> */}
       <GetInTouch />
       <Footer />

@@ -14,8 +14,8 @@ const ServicePageLayout = () => {
   return (
     <>
       <Header />
-      <ServiceDetailsBanner />
-      <div className="wrapper">
+      {/* <ServiceDetailsBanner /> */}
+      <div className="wrapper pt-[5rem]">
         <div className="py-[5rem] grid md:grid-cols-[30%_65%] gap-10">
           <div className="w-full flex flex-col gap-10">
             <div

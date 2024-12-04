@@ -4,22 +4,30 @@ import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";
 import img1 from "../assets/aboutus-1.jpg";
 import img2 from "../assets/aboutus-2.png";
-import img3 from "../assets/aboutus-3.jpeg";
+import img3 from "../assets/aboutus-3.jpg";
 import { Link } from "react-router-dom";
 import Testimonials from "../components/Testimonials";
-import ClientsLogoSlider from "../components/Website/ClientsLogoSlider";
+import bannerImg from "../assets/about-us-banner.jpg";
+import bgImg from "../assets/1111.jpg";
+import BrandLogos from "../components/BrandLogos";
 
 const AboutUs = () => {
   return (
     <>
       <Header />
-      <PageBanner title={"About Us"} />
+      <PageBanner
+        position="left"
+        title={
+          "Your Trusted Partner in Digital Transformation and Next-Generation Technology Solutions"
+        }
+        banner={bannerImg}
+      />
       <section className="py-[5rem] wrapper grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col">
-          <h1 data-aos="fade-right" className="heading">
+          {/* <h1 data-aos="fade-right" className="heading">
             Your Trusted Partner in Digital Transformation and Next-Generation
             Technology Solutions
-          </h1>
+          </h1> */}
           <p data-aos="fade-right" className="description mt-4">
             At Anytechwork, we harness the power of technology to fuel your
             business growth. Based in the vibrant tech ecosystem of Bengaluru,
@@ -43,13 +51,17 @@ const AboutUs = () => {
             environment.
           </p>
         </div>
-        <img
+        <div
           data-aos="fade-left"
-          loading="lazy"
-          src={img1}
-          alt="about us"
-          className="w-full rounded-lg h-[40vh] lg:h-full object-cover"
-        />
+          className="relative w-full h-full rounded-lg overflow-hidden"
+        >
+          <img
+            loading="lazy"
+            src={img1}
+            alt="about us"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
       </section>
 
       <section className="wrapper">
@@ -71,26 +83,35 @@ const AboutUs = () => {
           loading="lazy"
           src={img2}
           alt="about us"
-          className="w-full rounded-lg h-[40vh] sm:h-[70vh] object-cover mt-7"
+          className="w-full rounded-lg h-[40vh] sm:h-[80vh] object-cover mt-7"
         />
       </section>
 
       <section className="wrapper my-[5rem]">
         <div
           data-aos="fade-up"
-          className="py-[5rem] px-4 rounded-md text-white bg-[#17012C8A] flex flex-col items-center gap-2 text-center"
+          className="py-[5rem] px-4 rounded-lg text-white relative overflow-hidden"
         >
-          <h1 className="heading">Be the First With Us</h1>
-          <p className="description">
-            There are many reasons to get down and start to get depressed about
-            your situation.
-          </p>
-          <Link
-            to="/contact-us"
-            className="rounded-sm transition-all duration-300 hover:-translate-y-1 bg-[#734D88] hover:bg-[#734D88]/90 px-10 py-3 w-fit mt-5"
-          >
-            Get Started
-          </Link>
+          <img
+            loading="lazy"
+            src={bgImg}
+            alt="about us"
+            className="absolute w-full h-full object-cover inset-0"
+          />
+          <div className="absolute inset-0 bg-[#17012cb6]"></div>
+          <div className="relative z-10 flex flex-col items-center gap-2 text-center">
+            <h1 className="heading">Be the First With Us</h1>
+            <p className="description max-w-2xl">
+              There are many reasons to get down and start to get depressed
+              about your situation.
+            </p>
+            <Link
+              to="/contact-us"
+              className="rounded-sm transition-all duration-300 hover:-translate-y-1 bg-[#734D88] hover:bg-[#734D88]/90 px-10 py-3 w-fit mt-5"
+            >
+              Get Started
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -140,7 +161,7 @@ const AboutUs = () => {
         </div>
       </section>
       <Testimonials />
-      <ClientsLogoSlider />
+      <BrandLogos />
       <Footer />
     </>
   );

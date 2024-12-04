@@ -54,12 +54,12 @@ const BrandLogos = () => {
   });
   return (
     <div
-      className="relative text-black bg-primary/20 pt-[3rem]"
+      className="relative text-black pt-[3rem]"
     >
       <div className="relative z-10">
         <div data-aos="fade-up" className="wrapper">
           <h2 className="heading max-w-[60rem] mx-auto text-center capitalize">
-            Join our 50+ happy clients
+            Join our <span className="text-primary">50+</span> happy clients
           </h2>
         </div>
         <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-5 py-[2rem]">
